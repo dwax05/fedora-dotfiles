@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Choose a rice
+RICE="$(ls "$HOME/.config/hypr/themes/" | wofi --show dmenu)" || exit
+
+# Write it to ~/.cache/theme for use in other scripts(cat "$HOME/.cache/theme").
+echo "$RICE" > $HOME/.cache/theme
+
+# Hyprland Theme
+rm -f "$HOME/.config/hypr/theme.conf"
+ln -s "$HOME/.config/hypr/themes/$RICE/theme.conf" "$HOME/.config/hypr/theme.conf"
+
+# Wofi Theme
+rm -f "$HOME/.config/wofi/style.css"
+ln -s "$HOME/.config/wofi/themes/$RICE/style.css" "$HOME/.config/wofi/style.css"
+
+killall waybar
+waybar -c "$HOME/.config/waybar/$RICE/config.jsonc" -s "$HOME/.config/waybar/$RICE/style.css" &

@@ -1,0 +1,6 @@
+[Fri Sep 15 18:04:43.500169 2023] [mpm_prefork:notice] [pid 43213:tid 43213] AH00163: Apache/2.4.57 (Fedora Linux) configured -- resuming normal operations
+[Fri Sep 15 18:04:43.500210 2023] [core:notice] [pid 43213:tid 43213] AH00094: Command line: '/usr/sbin/httpd -f /usr/share/gnome-user-share/dav_user_2.4.conf -C Listen 40223 -D RequirePasswordAlways'
+[Fri Sep 15 18:05:07.370301 2023] [mpm_prefork:notice] [pid 43213:tid 43213] AH00169: caught SIGTERM, shutting down
+[Fri Sep 15 18:05:08.044186 2023] [mpm_prefork:notice] [pid 43375:tid 43375] AH00163: Apache/2.4.57 (Fedora Linux) configured -- resuming normal operations
+[Fri Sep 15 18:05:08.044282 2023] [core:notice] [pid 43375:tid 43375] AH00094: Command line: '/usr/sbin/httpd -f /usr/share/gnome-user-share/dav_user_2.4.conf -C Listen 39123'
+[Fri Sep 15 18:05:09.059574 2023] [mpm_prefork:notice] [pid 43375:tid 43375] AH00169: caught SIGTERM, shutting down
