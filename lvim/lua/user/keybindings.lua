@@ -23,3 +23,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set('n', '<CR>', '<cmd>FineCmdline<CR>')
+
+vim.keymap.set("n", "<leader>ww", "<cmd>Neorg index<CR>", { silent = true })
+vim.keymap.set("n", "<leader>wr", "<cmd>Neorg return<CR>", { silent = true })
+vim.keymap.set("n", "<leader>t", "<cmd>Neorg toggle-concealer<CR>", { silent = true })

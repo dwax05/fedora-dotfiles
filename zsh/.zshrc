@@ -13,14 +13,15 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)
 
+
+# Plugins
 eval "$(starship init zsh)"
-
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /dev/null
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2> /dev/null
 source /usr/share/fzf/shell/key-bindings.zsh 2> /dev/null
 
+# Greetings
 pokemon-colorscripts -r --no-title
-cat "$HOME/vimwiki/TODO.wiki" | lolcat -r
-# echo "\033[34m$(cat $HOME/vimwiki/TODO.wiki)\033[0;39m"
+cat "$HOME/vimwiki/TODO.norg" | grep "(*)" | grep -o '[[:alpha:]].*' | sed 's/^/- /' | lolcat -r
+# echo "\033[34m$(cat $HOME/vimwiki/TODO.norg)\033[0;39m"
