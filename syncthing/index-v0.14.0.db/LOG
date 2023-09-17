@@ -77,3 +77,6 @@
 10:12:19.446540 table@compaction committed F-2 S-1KiB Ke·0 D·61 T·5.627418ms
 10:12:19.446954 table@remove removed @12
 10:12:19.447238 table@remove removed @11
+=============== Sep 17, 2023 (EDT) ===============
+07:27:52.690467 db@close closing
+07:27:52.691111 db@close done T·644.608µs

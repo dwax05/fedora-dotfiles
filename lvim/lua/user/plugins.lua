@@ -8,6 +8,13 @@ lvim.plugins = {
     { "roobert/activate.nvim" },
     { "kdheepak/lazygit.nvim" },
     { "easymotion/vim-easymotion" },
+    { "kylechui/nvim-surround",
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",

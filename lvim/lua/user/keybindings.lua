@@ -22,7 +22,7 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
-vim.keymap.set('n', '<CR>', '<cmd>FineCmdline<CR>')
+vim.keymap.set('n', '<leader><leader>/', '<Plug>(easymotion-jumptoanywhere)')
 
 vim.keymap.set("n", "<leader>ww", "<cmd>Neorg index<CR>", { silent = true })
 vim.keymap.set("n", "<leader>wr", "<cmd>Neorg return<CR>", { silent = true })

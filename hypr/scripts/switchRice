@@ -17,8 +17,8 @@ rm -f "$HOME/.config/wofi/style.css"
 ln -s "$HOME/.config/wofi/themes/$RICE/style.css" "$HOME/.config/wofi/style.css"
 
 # Kitty Theme
-rm -f "$HOME/.config/kitty/themes/theme.conf"
-ln -s "$HOME/.config/kitty/themes/$RICE.conf" "$HOME/.config/kitty/themes/theme.conf"
+# rm -f "$HOME/.config/kitty/themes/theme.conf"
+# ln -s "$HOME/.config/kitty/themes/$RICE.conf" "$HOME/.config/kitty/themes/theme.conf"
 
 killall waybar
 waybar -c "$HOME/.config/waybar/$RICE/config.jsonc" -s "$HOME/.config/waybar/$RICE/style.css" &

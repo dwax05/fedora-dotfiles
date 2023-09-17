@@ -23,5 +23,4 @@ source /usr/share/fzf/shell/key-bindings.zsh 2> /dev/null
 
 # Greetings
 pokemon-colorscripts -r --no-title
-cat "$HOME/vimwiki/TODO.norg" | grep "(*)" | grep -o '[[:alpha:]].*' | sed 's/^/- /' | lolcat -r
-# echo "\033[34m$(cat $HOME/vimwiki/TODO.norg)\033[0;39m"
+cat "$HOME/vimwiki/todo.norg" | grep "(*)" | grep -o '[[:alpha:]].*' | sed 's/^/- /' | lolcat -r
