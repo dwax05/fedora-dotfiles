@@ -10,8 +10,6 @@ echo "$RICE" > $HOME/.cache/theme
 rm -f "$HOME/.config/hypr/theme.conf"
 ln -s "$HOME/.config/hypr/themes/$RICE/theme.conf" "$HOME/.config/hypr/theme.conf"
 
-sleep 0.5s
-
 # Wofi Theme
 rm -f "$HOME/.config/wofi/style.css"
 ln -s "$HOME/.config/wofi/themes/$RICE/style.css" "$HOME/.config/wofi/style.css"
@@ -19,6 +17,8 @@ ln -s "$HOME/.config/wofi/themes/$RICE/style.css" "$HOME/.config/wofi/style.css"
 # Kitty Theme
 # rm -f "$HOME/.config/kitty/themes/theme.conf"
 # ln -s "$HOME/.config/kitty/themes/$RICE.conf" "$HOME/.config/kitty/themes/theme.conf"
+
+sleep 1s
 
 killall waybar
 waybar -c "$HOME/.config/waybar/$RICE/config.jsonc" -s "$HOME/.config/waybar/$RICE/style.css" &

@@ -1,4 +1,5 @@
 lvim.colorscheme = "tokyonight"
+-- lvim.colorscheme = "arctic"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true

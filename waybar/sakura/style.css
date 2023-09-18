@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0px;
-    /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
+    /* font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK; */
     font-family: JetBrainsMono Nerd Font, FontAwesome, Noto Sans CJK;
     font-size: 11px;
     font-style: normal;
@@ -15,13 +15,13 @@ window#waybar {
 }
 
 #workspaces {
-	background: #282828;
-	margin: 5px 5px 5px 5px;
-  padding: 0px 5px 0px 5px;
-	border-radius: 16px;
-  border: solid 0px #f4d9e1;
-  font-weight: normal;
-  font-style: normal;
+    background: #282828;
+    margin: 5px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 16px;
+    border: solid 0px #f4d9e1;
+    font-weight: normal;
+    font-style: normal;
 }
 #workspaces button {
     padding: 0px 5px;
@@ -88,7 +88,7 @@ window#waybar {
 
 
 #battery {
-    color: #9ece6a;
+    color: #E6B9C5;
 }
 
 #battery.charging {

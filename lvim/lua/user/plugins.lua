@@ -2,19 +2,19 @@ lvim.builtin.nvimtree.active = false
 
 lvim.plugins = {
     -- { "vimwiki/vimwiki" },
+    -- { "lunarvim/colorschemes" },
     { "MunifTanjim/nui.nvim" },
     { "VonHeikemen/fine-cmdline.nvim" },
     { "ThePrimeagen/harpoon" },
     { "roobert/activate.nvim" },
     { "kdheepak/lazygit.nvim" },
     { "easymotion/vim-easymotion" },
-    { "kylechui/nvim-surround",
-        config = function()
-            require("nvim-surround").setup({
-                -- Configuration here, or leave empty to use defaults
-            })
-        end
-    },
+    { "kylechui/nvim-surround" },
+    { "rktjmp/lush.nvim" },
+    { "rockyzhang24/arctic.nvim" },
+    { "nvim-tree/nvim-web-devicons" },
+    { "lewis6991/gitsigns.nvim" },
+    { "romgrk/barbar.nvim" },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",

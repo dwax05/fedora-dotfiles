@@ -3,10 +3,8 @@
 # Use neovim for vim if present.
 [ -x "$(command -v lvim)" ] && alias vim="lvim" vimdiff="lvim -d" && EDITOR='lvim'
 
-[ -f "$MBSYNCRC" ] && alias mbsync="mbsync -c $MBSYNCRC"
-
 # sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+for command in mount umount sv dnf updatedb su shutdown poweroff reboot ; do
 	alias $command="sudo $command"
 done; unset command
 
@@ -25,15 +23,11 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
-	bc="bc -ql" \
-	rsync="rsync -vrPlu" \
 	mkd="mkdir -pv" \
-	ffmpeg="ffmpeg -hide_banner" \
-    pip="python -m pip"
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
+	ls="exa --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
@@ -43,12 +37,10 @@ alias \
 alias \
 	ka="killall" \
 	g="git" \
-	trem="transmission-remote" \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
-	p="pacman" \
-	z="zathura"
+	z="zoxide"
 
 # Replace ls with exa
 alias \
