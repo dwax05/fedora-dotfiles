@@ -28,7 +28,7 @@
 		"tooltip": false,
 		"format": " {}%",
         "exec": "light | cut -c1-2",
-		"interval":1,
+		"interval": 1,
         "on-scroll-up": "light -A 5",
 		"on-scroll-down": "light -U 5"
 	},
@@ -49,7 +49,8 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": "{: %I:%M %p   %m/%d/%Y}"
+        // "format": "{: %I:%M %p   %m/%d/%Y}"
+        "format": "{: %I:%M %p}"
     },
     "cpu": {
         "interval": 15,
@@ -82,6 +83,7 @@
     "custom/power":{
         "format": " ",
         "on-click": "bash ~/.config/wofi/river/leave.sh",
+        "tooltip": false,
     },
     "custom/updates":{
         "format": "{} Update(s)",
@@ -92,6 +94,7 @@
     },
     "custom/wallpaper":{
         "format":" ",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+        "on-click": "bash ~/.config/system_scripts/pkill_bc",
+        "tooltip": false
     }
 }

@@ -1,7 +1,0 @@
-# This file is created by ibus-daemon, please do not modify it.
-# This file allows processes on the machine to find the
-# ibus session bus with the below address.
-# If the IBUS_ADDRESS environment variable is set, it will
-# be used rather than this file.
-IBUS_ADDRESS=unix:path=/home/dylanwax/.cache/ibus/dbus-C4LeepcE,guid=2b0449aded4d25ee8f7e010e650a23e6
-IBUS_DAEMON_PID=22650

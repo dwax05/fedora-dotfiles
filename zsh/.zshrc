@@ -31,8 +31,8 @@ source /usr/share/fzf/shell/key-bindings.zsh 2> /dev/null
 # Greetings
 
 greet(){
-    pokemon-colorscripts -r --no-title
-    cat "$HOME/vimwiki/todo.norg" | grep "(-)\|( )" | grep -o '[[:alpha:]].*' | sed 's/^/- /' | sed "s/{[^}]*}//g" | lolcat -r # line at the end of {} items might be a problem eventually, but why slow it down even more when im already using 5 pipes?
+  pokemon-colorscripts -r --no-title
+  cat "$HOME/vimwiki/todo.norg" | grep "(-)\|( )" | grep -o '[[:alpha:]].*' | sed 's/^/- /' | sed "s/{[^}]*}//g" | lolcat -r # line at the end of {} items might be a problem eventually, but why slow it down even more when im already using 5 pipes?
 }
 
 greet
