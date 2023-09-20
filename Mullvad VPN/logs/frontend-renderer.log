@@ -1,32 +1,6 @@
-[2023-09-17 22:58:14.854][verbose] Tunnel state: connected
-[2023-09-17 22:58:14.855][verbose] Initial: Wrong content height: 593, expected 568
-[2023-09-18 06:18:51.692][verbose] Tunnel state: error
-[2023-09-18 06:18:51.710][verbose] Tunnel state: error
-[2023-09-18 06:18:59.695][verbose] Tunnel state: connecting
-[2023-09-18 06:18:59.723][verbose] Tunnel state: connecting
-[2023-09-18 06:18:59.999][verbose] Tunnel state: connected
-[2023-09-18 06:19:00.023][verbose] Tunnel state: connected
-[2023-09-18 09:07:12.658][verbose] Tunnel state: error
-[2023-09-18 09:07:12.676][verbose] Tunnel state: error
-[2023-09-18 09:07:16.129][verbose] Tunnel state: connecting
-[2023-09-18 09:07:16.136][verbose] Tunnel state: connecting
-[2023-09-18 09:07:16.494][verbose] Tunnel state: connected
-[2023-09-18 09:07:16.520][verbose] Tunnel state: connected
-[2023-09-18 09:24:48.990][verbose] Tunnel state: error
-[2023-09-18 09:24:49.011][verbose] Tunnel state: error
-[2023-09-18 09:24:52.317][verbose] Tunnel state: connecting
-[2023-09-18 09:24:52.327][verbose] Tunnel state: connecting
-[2023-09-18 09:24:52.506][verbose] Tunnel state: connected
-[2023-09-18 09:24:52.522][verbose] Tunnel state: connected
-[2023-09-18 09:43:10.466][verbose] Tunnel state: error
-[2023-09-18 09:43:10.565][verbose] Tunnel state: error
-[2023-09-18 09:43:13.707][verbose] Tunnel state: connecting
-[2023-09-18 09:43:13.711][verbose] Tunnel state: connecting
-[2023-09-18 09:43:13.879][verbose] Tunnel state: connected
-[2023-09-18 09:43:13.909][verbose] Tunnel state: connected
-[2023-09-18 10:31:05.362][verbose] Tunnel state: error
-[2023-09-18 10:31:05.629][verbose] Tunnel state: error
-[2023-09-18 10:31:08.090][verbose] Tunnel state: connecting
-[2023-09-18 10:31:08.094][verbose] Tunnel state: connecting
-[2023-09-18 10:31:08.272][verbose] Tunnel state: connected
-[2023-09-18 10:31:08.313][verbose] Tunnel state: connected
+[2023-09-19 18:42:47.504][verbose] Tunnel state: disconnected
+[2023-09-19 18:42:47.504][verbose] Initial: Wrong content height: 593, expected 568
+[2023-09-19 19:18:18.361][verbose] Tunnel state: disconnected
+[2023-09-19 19:18:18.380][verbose] Tunnel state: disconnected
+[2023-09-19 19:18:18.382][error] Failed to update the location: 5 NOT_FOUND: no location was found
+[2023-09-19 19:18:18.384][error] Failed to update the location: 5 NOT_FOUND: no location was found

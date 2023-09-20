@@ -12,6 +12,7 @@ lvim.plugins = {
     { "kylechui/nvim-surround" },
     { "rktjmp/lush.nvim" },
     { "rockyzhang24/arctic.nvim" },
+    { "paretje/nvim-man" },
     { "nvim-tree/nvim-web-devicons" },
     { "lewis6991/gitsigns.nvim" },
     { "romgrk/barbar.nvim" },
