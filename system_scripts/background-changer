@@ -3,7 +3,9 @@
 wallpapers_path=".config/river/backgrounds"
 
 while true; do
-  swaybg -i $(find $wallpapers_path -type f | shuf -n 1) -m fill
+  # swaybg -i $(find $wallpapers_path -type f | shuf -n 1) -m fill
+  $HOME/.local/bin/swww img $(find $wallpapers_path -type f | shuf -n 1) --transition-type wipe --transition-angle 30 --transition-step 90 --transition-fps 60
+  # $HOME/.local/bin/swww img $(find $wallpapers_path -type f | shuf -n 1) --transition-type outer --transition-pos 2560,1600 --transition-step 90 --transition-fps 60 
   sleep 29m
 done
 sleep 1m

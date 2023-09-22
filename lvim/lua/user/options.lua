@@ -1,5 +1,3 @@
-lvim.colorscheme = "tokyonight"
--- lvim.colorscheme = "arctic"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -26,3 +24,18 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
+
+-- colorsheme
+-- local Colorschemes = {
+--     "tokyonight",
+--     "gruvbox",
+--     "catpuccin",
+--     "everforest",
+--     "bamboo",
+--     "rose-pine",
+--     "kanagawa",
+-- }
+-- math.randomseed(os.time())
+-- local theme = Colorschemes[math.random(1, 4)]
+
+lvim.colorscheme = "tokyonight"

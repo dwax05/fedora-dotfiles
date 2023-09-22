@@ -23,6 +23,7 @@ window#waybar.hidden {
     color: transparent;
 	background: transparent;
 }
+
 #tags {
 	margin-top: 6px;
 	margin-left: 12px;

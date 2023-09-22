@@ -1,0 +1,82 @@
+=============== Sep 15, 2023 (EDT) ===============
+22:02:44.922635 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:02:44.923120 db@open opening
+22:02:44.923523 version@stat F·[] S·0B[] Sc·[]
+22:02:44.924049 db@janitor F·2 G·0
+22:02:44.924057 db@open done T·931.609µs
+22:02:46.281754 memdb@flush N·46 S·1KiB
+22:02:46.285772 memdb@flush created L0@3 N·46 S·597B "\ndb..ion,v46":"\nla..ime,v19"
+22:02:46.285789 version@stat F·[1] S·597B[597B] Sc·[0.25]
+22:02:46.285973 memdb@flush committed F·1 T·4.206175ms
+22:02:46.286014 journal@remove removed @1
+22:02:46.286023 table@compaction range L-1 "":""
+22:02:46.286028 table@compaction L0·1 -> L1·0 S·597B Q·46
+22:02:46.286225 table@build created L1@4 N·4 S·207B "\ndb..ion,v46":"\nla..ime,v19"
+22:02:46.286235 version@stat F·[0 1] S·207B[0B 207B] Sc·[0.00 0.00]
+22:02:46.286386 table@compaction committed F~ S-390B Ke·0 D·42 T·352.119µs
+22:02:46.286597 table@remove removed @3
+22:11:06.967464 db@close closing
+22:11:06.968493 db@close done T·1.032898ms
+=============== Sep 15, 2023 (EDT) ===============
+22:11:20.354257 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:11:20.355348 version@stat F·[0 1] S·207B[0B 207B] Sc·[0.00 0.00]
+22:11:20.355367 db@open opening
+22:11:20.355407 journal@recovery F·1
+22:11:20.355906 journal@recovery recovering @2
+22:11:20.356595 memdb@flush created L0@5 N·28 S·1024B "\x00\x00\x00..iki,v66":"\x11\xfaR..\xed\xab\xc7,v74"
+22:11:20.356846 version@stat F·[1 1] S·1KiB[1024B 207B] Sc·[0.25 0.00]
+22:11:20.357942 db@janitor F·4 G·0
+22:11:20.357958 db@open done T·2.584746ms
+22:11:38.724069 db@close closing
+22:11:38.724136 db@close done T·65.374µs
+=============== Sep 15, 2023 (EDT) ===============
+22:11:44.873746 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:11:44.873795 version@stat F·[1 1] S·1KiB[1024B 207B] Sc·[0.25 0.00]
+22:11:44.873803 db@open opening
+22:11:44.873820 journal@recovery F·1
+22:11:44.874146 journal@recovery recovering @6
+22:11:44.874660 memdb@flush created L0@8 N·7 S·364B "\x037J..ion,v82":"\x11\xfaR..\xed\xab\xc7,d78"
+22:11:44.874798 version@stat F·[2 1] S·1KiB[1KiB 207B] Sc·[0.50 0.00]
+22:11:44.875347 db@janitor F·5 G·0
+22:11:44.875352 db@open done T·1.547056ms
+22:13:26.770365 table@compaction L0·2 -> L1·1 S·1KiB Q·133
+22:13:26.774449 table@build created L1@11 N·24 S·914B "\x00\x00\x00..iki,v66":"\x0e\x00\x00..iki,v70"
+22:13:26.774510 version@stat F·[0 1] S·914B[0B 914B] Sc·[0.00 0.00]
+22:13:26.775101 table@compaction committed F-2 S-681B Ke·0 D·15 T·4.696925ms
+22:13:26.775303 table@remove removed @5
+22:13:26.775347 table@remove removed @4
+=============== Sep 16, 2023 (EDT) ===============
+08:03:55.483199 db@close closing
+08:03:55.483948 db@close done T·749.489µs
+=============== Sep 16, 2023 (EDT) ===============
+09:41:48.857072 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:41:48.857640 version@stat F·[0 1] S·914B[0B 914B] Sc·[0.00 0.00]
+09:41:48.857663 db@open opening
+09:41:48.857709 journal@recovery F·1
+09:41:48.858164 journal@recovery recovering @9
+09:41:48.861062 memdb@flush created L0@12 N·69 S·1KiB "\x00\x00\x00..iki,v107":"\x0e\x00\x00..iki,v131"
+09:41:48.861215 version@stat F·[1 1] S·2KiB[1KiB 914B] Sc·[0.25 0.00]
+09:41:48.861753 db@janitor F·5 G·1
+09:41:48.861757 db@janitor removing table-8
+09:41:48.861771 db@open done T·4.102733ms
+09:46:00.617488 db@close closing
+09:46:00.617703 db@close done T·212.247µs
+=============== Sep 16, 2023 (EDT) ===============
+09:46:02.631488 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:46:02.631549 version@stat F·[1 1] S·2KiB[1KiB 914B] Sc·[0.25 0.00]
+09:46:02.631560 db@open opening
+09:46:02.631585 journal@recovery F·1
+09:46:02.632465 journal@recovery recovering @13
+09:46:02.633151 memdb@flush created L0@15 N·2 S·166B "\x04de..can,v154":"\x04vi..can,v155"
+09:46:02.633347 version@stat F·[2 1] S·2KiB[1KiB 914B] Sc·[0.50 0.00]
+09:46:02.634122 db@janitor F·5 G·0
+09:46:02.634133 db@open done T·2.56963ms
+10:12:19.439965 table@compaction L0·2 -> L1·1 S·2KiB Q·213
+10:12:19.445175 table@build created L1@18 N·34 S·1KiB "\x00\x00\x00..iki,v107":"\x0e\x00\x00..iki,v131"
+10:12:19.445291 version@stat F·[0 1] S·1KiB[0B 1KiB] Sc·[0.00 0.00]
+10:12:19.446540 table@compaction committed F-2 S-1KiB Ke·0 D·61 T·5.627418ms
+10:12:19.446954 table@remove removed @12
+10:12:19.447238 table@remove removed @11
+=============== Sep 17, 2023 (EDT) ===============
+07:27:52.690467 db@close closing
+07:27:52.691111 db@close done T·644.608µs

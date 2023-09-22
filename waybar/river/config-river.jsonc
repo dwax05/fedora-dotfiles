@@ -1,9 +1,9 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
+	"modules-left": ["custom/launcher","cpu","memory","tray"],
 	"modules-center": ["river/tags"],
 	"modules-right": ["custom/wallpaper","custom/backlight","pulseaudio","clock", "battery","custom/power"],
-    // unused, "custom/updates"
+    // unused, "custom/updates", "custom/media"
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -17,7 +17,20 @@
 	},
 
     "river/tags": {
-		"num-tags": 6 
+		"num-tags": 6,
+    //     "format": "{icon}",
+    //     "on-click": "activate",
+    //     "format-icons": {
+    //         "1": "",
+    //         "2": "",
+    //         "3": "",
+    //         "4": "",
+    //         "5": "",
+    //         "6": "",
+    //         "urgent": "",
+    //         "active": "",
+    //         "default": ""
+    //     }
     },
 	"network": {
 		"tooltip": false,
@@ -64,21 +77,22 @@
     },
     "custom/media": {
         "interval": 30,
-        "format": "{icon} {}",
+        "format": "{icon}",
+        "tooltip": false,
         "return-type": "json",
         "max-length": 20,
         "format-icons": {
-            "spotify": " ",
-            "default": " "
+            "spotify": "",
+            "default": ""
         },
         "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
         "on-click": "playerctl play-pause"
     },
     "custom/launcher":{
         "format": " ",
         "on-click": "wofi -show drun -c $HOME/.config/wofi/river/config -s $HOME/.config/wofi/river/style.css",
-        "on-click-right": "killall wofi"
+        "on-click-right": "killall wofi",
+        "tooltip": false,
     },
     "custom/power":{
         "format": " ",

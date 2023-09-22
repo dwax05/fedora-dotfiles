@@ -8,6 +8,7 @@ foreground = "#D9E0EE"
 [urgency_normal]
 background = "#1E1E2E"
 foreground = "#D9E0EE"
+frame_color = "#89DCED"
 
 [urgency_critical]
 background = "#1E1E2E"
