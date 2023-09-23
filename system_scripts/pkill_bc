@@ -5,7 +5,7 @@
 ## You can grep multiple processes using this script and kill them 
 
 #-- Kill Background-Changer --#
-process_id=`/bin/ps -fu $USER| grep "background-changer" | grep -v "grep" | awk '{print $2}'`
+process_id=`/bin/ps -fu $USER| grep "background-changer" | grep -v "grep" | grep -v "vim" | awk '{print $2}'`
 kill $process_id
 
 #-- Now freshly start the process in the background --#

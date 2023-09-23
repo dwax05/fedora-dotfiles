@@ -23,6 +23,7 @@ lvim.plugins = {
     { "lewis6991/gitsigns.nvim" },
     { "romgrk/barbar.nvim" },
     { "simrat39/rust-tools.nvim" },
+    { "kovetskiy/sxhkd-vim" },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",

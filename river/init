@@ -39,7 +39,7 @@ riverctl map normal $mod+Shift x  spawn "bash ~/.config/system_scripts/wayland_s
 riverctl map normal $mod Escape spawn "bash ~/.config/wofi/river/leave.sh"
 
 # Screenshot
-riverctl map normal None Print spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g" | sed "s/--/-/g").png&&grim -g "$(slurp)" $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u normal -t 2000'
+riverctl map normal $mod+Shift S spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g" | sed "s/--/-/g").png&&grim -g "$(slurp)" $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u normal -t 2000'
 
 # Mod+J and Mod+K to focus the next/previous view in the layout stack
 riverctl map normal $mod J focus-view next
@@ -192,7 +192,7 @@ riverctl border-color-unfocused 0xABE9B3
 riverctl set-repeat 50 300
 
 # auto starting apps
-bash $HOME/.config/river/process.sh
+bash $HOME/.config/system_scripts/start_wayland
 
 # Set app-ids of views which should float
 riverctl float-filter-add "float"
@@ -216,8 +216,6 @@ do
   riverctl input $keyborad events enabled
     riverctl input $keyboard disable-while-typing disabled
 done
-
-riverctl input name disable-while-typing enabled
 
 riverctl focus-follows-cursor normal
 
