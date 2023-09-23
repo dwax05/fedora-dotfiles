@@ -1,4 +1,6 @@
 
+lvim.transparent_window = false
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

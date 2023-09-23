@@ -1,9 +1,17 @@
-[2023-09-21 20:59:51.949][verbose] Chromium sandbox is enabled
-[2023-09-21 20:59:51.950][info] Running version 2023.4
-[2023-09-21 20:59:52.465][info] Detected locale: en-US
-[2023-09-21 20:59:52.492][info] Connected to the daemon
-[2023-09-21 20:59:52.576][info] Skip autoconnect because GUI setting is disabled
-[2023-09-21 21:18:05.388][info] before-quit received
-[2023-09-21 21:18:05.388][info] Quit initiated
-[2023-09-21 21:18:05.388][info] Unsubscribed from the daemon events
-[2023-09-21 21:18:05.388][verbose] GRPC Channel connectivity state changed to 4
+[2023-09-22 22:27:38.062][verbose] Chromium sandbox is enabled
+[2023-09-22 22:27:38.063][info] Running version 2023.4
+[2023-09-22 22:27:38.158][info] Detected locale: en-US
+[2023-09-22 22:27:38.182][info] Connected to the daemon
+[2023-09-22 22:27:38.224][info] Skip autoconnect because GUI setting is disabled
+[2023-09-22 22:40:00.652][info] Suspend event received, disconnecting from daemon
+[2023-09-22 22:40:00.653][verbose] GRPC Channel connectivity state changed to 4
+[2023-09-22 22:40:00.654][info] Disconnected from the daemon
+[2023-09-22 22:40:00.654][info] Suspend event received, disconnecting from daemon
+[2023-09-22 22:40:00.657][info] Disconnected from the daemon
+[2023-09-22 22:56:36.399][info] Resume event received, connecting to daemon
+[2023-09-22 22:56:36.405][info] Connected to the daemon
+[2023-09-22 22:56:36.409][info] Resume event received, connecting to daemon
+[2023-09-22 22:56:36.414][info] Connected to the daemon
+[2023-09-22 22:56:36.419][warning] Failed to fetch account data. Retrying in 8000 ms
+[2023-09-22 22:56:36.421][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
+[2023-09-22 22:56:36.468][warning] Failed to fetch account data. Retrying in 8000 ms

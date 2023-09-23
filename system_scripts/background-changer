@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 
-wallpapers_path=".config/river/backgrounds"
+# wallpapers_path="$HOME/.config/river/backgrounds"
+wallpapers_path="$HOME/.local/cringe"
+
 
 while true; do
   # swaybg -i $(find $wallpapers_path -type f | shuf -n 1) -m fill
-  $HOME/.local/bin/swww img $(find $wallpapers_path -type f | shuf -n 1) --transition-type wipe --transition-angle 30 --transition-step 90 --transition-fps 60
-  # $HOME/.local/bin/swww img $(find $wallpapers_path -type f | shuf -n 1) --transition-type outer --transition-pos 2560,1600 --transition-step 90 --transition-fps 60 
-  sleep 29m
+  wallpaper=$(find $wallpapers_path -type f | shuf -n 1)
+  $HOME/.local/bin/swww img $wallpaper --transition-type wipe --transition-angle 30 --transition-step 90 --transition-fps 60
+  ln -s "$wallpaper" $HOME/.cache/currentwallpaper.png
+  echo "$wallpaper" > $HOME/.cache/wallpaper
+  sleep 14m
 done
 sleep 1m

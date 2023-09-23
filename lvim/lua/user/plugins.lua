@@ -16,11 +16,13 @@ lvim.plugins = {
     { "rose-pine/neovim" },
     { "ribru17/bamboo.nvim" },
     { "sainnhe/everforest" },
+    { "ThePrimeagen/vim-be-good" },
     { "catppuccin/nvim" },
     { "paretje/nvim-man" },
     { "nvim-tree/nvim-web-devicons" },
     { "lewis6991/gitsigns.nvim" },
     { "romgrk/barbar.nvim" },
+    { "simrat39/rust-tools.nvim" },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",
