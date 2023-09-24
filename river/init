@@ -14,6 +14,7 @@ riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND _D
 
 # start kitty 
 riverctl map normal $mod Return spawn 'kitty'
+# riverctl map normal $mod Return spawn 'kitty -c $HOME/.config/kitty/wallpaper.conf'
 
 # close the focused view
 riverctl map normal $mod Q close
@@ -22,7 +23,6 @@ riverctl map normal $mod Q close
 riverctl map normal $mod R spawn $HOME/.config/river/init
 
 # launcher
-# riverctl map normal $mod D spawn "rofi -show drun"
 riverctl map normal $mod D spawn "wofi --show drun -c $HOME/.config/wofi/river/config -s $HOME/.config/wofi/river/style.css"
 
 # pcmanfm-qt

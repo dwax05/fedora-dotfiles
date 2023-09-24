@@ -75,7 +75,7 @@
         "on-click": "playerctl play-pause"
     },
     "custom/launcher":{
-        "format": " ",
+        "format": " ",
         "on-click": "wofi -show drun -c $HOME/.config/wofi/river/config -s $HOME/.config/wofi/river/style.css",
         "on-click-right": "killall wofi",
         "tooltip": false,

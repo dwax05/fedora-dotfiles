@@ -20,8 +20,6 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 vim.keymap.set('n', '<CR>', '<cmd>FineCmdline<CR>', { noremap = true })
 
--- vim.keymap.set('n', '<leader><leader>/', '<Plug>(easymotion-jumptoanywhere)')
-
 vim.keymap.set("n", "<leader>nw", "<cmd>Neorg index<CR>", { silent = true })
 vim.keymap.set("n", "<leader>nr", "<cmd>Neorg return<CR>", { silent = true })
 vim.keymap.set("n", "<leader>nt", "<cmd>Neorg toggle-concealer<CR>", { silent = true })

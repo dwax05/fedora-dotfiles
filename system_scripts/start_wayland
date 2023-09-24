@@ -11,4 +11,4 @@ dunst -config ~/.config/dunst/dunstrc &
 $HOME/.local/bin/swww-daemon &
 sh ~/.config/system_scripts/pkill_bc &
 nm-applet --indicator &
-swayidle -w timeout 300 ~/.config/system_scripts/wayland_session_lock &
+swayidle -w timeout 300 swaylock &

@@ -22,5 +22,12 @@ lvim.builtin.which_key.mappings[" "] = {
     L = { "<Plug>(easymotion-bd-jk)", "Jump line" },
 }
 
-lvim.builtin.which_key.mappings["x"] = { "<cmd>!chmod +x %<cr>" }
--- lvim.builtin.which_key.mappings["r"] = { ":%s/\<lt><C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>", "Substitute word" }
+lvim.builtin.which_key.mappings["b"] = {
+    name = "Buffer",
+    v = { "<cmd>vsplit<cr><cmd>Ex<cr>", "Vertical Split" },
+    s = { "<cmd>split<cr><cmd>Ex<cr>", "Horizontal Split" },
+    n = { "<cmd>BufferNext<cr>", "Next Buffer" },
+    N = { "<cmd>BufferPrevious<cr>", "Previous Buffer" },
+}
+
+lvim.builtin.which_key.mappings["x"] = { "<cmd>!chmod +x %<cr>", "Make Executable" }

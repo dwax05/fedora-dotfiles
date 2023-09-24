@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-[[ -n $wallpapers_path ]] || wallpapers_path="$HOME/.local/wallpapers/cringe"
-# [[ -n $wallpapers_path ]] || wallpapers_path="$HOME/.local/wallpapers/nsfw"
-
+# [[ -n $wallpapers_path ]] || wallpapers_path="$HOME/.local/wallpapers/cringe"
+# [[ -n $wallpapers_path ]] || wallpapers_path="$HOME/.local/wallpapers/huh"
 [[ -n $wallpapers_path ]] || wallpapers_path="$HOME/.local/wallpapers/normal"
 
 while true; do
   wallpaper=$(find $wallpapers_path -type f | shuf -n 1)
   $HOME/.local/bin/swww img $wallpaper --transition-type wipe --transition-angle 30 --transition-step 90 --transition-fps 60
-  ln -s "$wallpaper" $HOME/.cache/currentwallpaper.png
+  rm $HOME/.cache/wallpaper.png
+  ln -s "$wallpaper" $HOME/.cache/wallpaper.png
   echo "$wallpaper" > $HOME/.cache/wallpaper
-  sleep 4m
+  sleep 9m
 done
 sleep 1m
