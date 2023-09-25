@@ -14,7 +14,6 @@ riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND _D
 
 # start kitty 
 riverctl map normal $mod Return spawn 'kitty'
-# riverctl map normal $mod Return spawn 'kitty -c $HOME/.config/kitty/wallpaper.conf'
 
 # close the focused view
 riverctl map normal $mod Q close
@@ -168,8 +167,8 @@ do
     riverctl map $mode None XF86Eject spawn 'eject -T'
 
     # Control pulse audio volume
-    riverctl map $mode None XF86AudioRaiseVolume  spawn 'pactl set-sink-volume @DEFAULT_SINK@ +5%'
-    riverctl map $mode None XF86AudioLowerVolume  spawn 'pactl set-sink-volume @DEFAULT_SINK@ -5%'
+    riverctl map $mode None XF86AudioRaiseVolume  spawn 'pamixer -i 5'
+    riverctl map $mode None XF86AudioLowerVolume  spawn 'pamixer -d 5'
     riverctl map $mode None XF86AudioMute spawn 'pactl set-sink-mute @DEFAULT_SINK@ toggle'
 
     # Control MPRIS aware media players
@@ -179,13 +178,13 @@ do
     riverctl map $mode None XF86AudioNext  spawn 'playerctl next'
 
     # Control screen backlight brighness
-    riverctl map $mode None XF86MonBrightnessUp   spawn 'light -A 5'
-    riverctl map $mode None XF86MonBrightnessDown spawn 'light -U 5'
+    riverctl map $mode None XF86MonBrightnessUp   spawn "brightnessctl set 1%+"
+    riverctl map $mode None XF86MonBrightnessDown spawn "brightnessctl set 1%-"
 done
 
 # Set background and border color
 riverctl background-color 0x000000
-riverctl border-color-focused 0x89DCEB	
+riverctl border-color-focused 0x89DCEB
 riverctl border-color-unfocused 0xABE9B3
 
 # Set repeat rate
@@ -214,7 +213,7 @@ done
 for keyboard in $(riverctl list-inputs | grep -i keyboard)
 do
   riverctl input $keyborad events enabled
-    riverctl input $keyboard disable-while-typing disabled
+  riverctl input $keyboard disable-while-typing disabled
 done
 
 riverctl focus-follows-cursor normal

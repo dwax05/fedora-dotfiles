@@ -18,6 +18,15 @@ mkcd() {
     cd "$1"
 }
 
+e() {
+    if [[ -n $1 ]]; then 
+        file=$(fd . $1 | fzf)
+    else
+        file=$(fd | fzf)
+    fi
+    [[ -n $file ]] && $EDITOR $file
+}
+
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	cp="cp -iv" \
@@ -32,16 +41,16 @@ alias \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
     cat="bat -p" \
-	ip="ip -color=auto"
 
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
 	g="git" \
+	lg="lazygit" \
 	sdn="shutdown -h now" \
-	e="$EDITOR" \
 	v="$EDITOR" \
-	z="zoxide"
+	z="zoxide" \
+    tm="tmux attach || tmux new-session"
 
 # Replace ls with eza
 alias \

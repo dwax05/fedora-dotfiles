@@ -28,6 +28,10 @@ lvim.builtin.which_key.mappings["b"] = {
     s = { "<cmd>split<cr><cmd>Ex<cr>", "Horizontal Split" },
     n = { "<cmd>BufferNext<cr>", "Next Buffer" },
     N = { "<cmd>BufferPrevious<cr>", "Previous Buffer" },
+    b = { "<Cmd>BufferOrderByBufferNumber<CR>", "Order Buffers by Number" },
+    d = { "<Cmd>BufferOrderByDirectory<CR>", "Order Buffers by Directory" },
+    l = { "<Cmd>BufferOrderByLanguage<CR>", "Order Buffers by Language" },
+    w = { "<Cmd>BufferOrderByWindowNumber<CR>", "Order Buffers by Window Number" },
 }
 
 lvim.builtin.which_key.mappings["x"] = { "<cmd>!chmod +x %<cr>", "Make Executable" }

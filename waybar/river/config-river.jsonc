@@ -1,9 +1,10 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","tray"],
+	"modules-left": ["custom/launcher","cpu","memory","custom/updates", "tray"],
 	"modules-center": ["river/tags"],
-	"modules-right": ["custom/wallpaper","custom/backlight","pulseaudio","clock", "battery","custom/power"],
-    // unused, "custom/updates", "custom/media"
+	// "modules-center": ["hyprland/workspaces"],
+	"modules-right": ["custom/wallpaper","custom/backlight", "pulseaudio","clock", "battery","custom/power"],
+    // unused, "custom/updates", "custom/media", "custom/backlight"
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -18,6 +19,19 @@
     "river/tags": {
 		"num-tags": 6,
     },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+        }
+    },
 	"network": {
 		"tooltip": false,
 		"format-wifi": "  {essid}",
@@ -25,11 +39,11 @@
 	},
 	"custom/backlight": {
 		"tooltip": false,
-		"format": " {}%",
-        "exec": "light | cut -c1-2",
+		"format": " {}",
+        "exec": "brightnessctl | grep '%' | awk '{print $4}' | sed 's/(//g' | sed 's/)//g'",
 		"interval": 1,
-        "on-scroll-up": "light -A 5",
-		"on-scroll-down": "light -U 5"
+        "on-scroll-up": "brightnessctl set 1%+",
+		"on-scroll-down": "brightnessctl set 1%-"
 	},
     "battery": {
         "states": {
@@ -86,11 +100,11 @@
         "tooltip": false,
     },
     "custom/updates":{
-        "format": "{} Update(s)",
-        "exec": "checkupdates | wc -l",
-        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
-        "interval": 15,
-        "on-click": "kitty dnf upgrade && notify-send 'The system has been updated' "
+        "format": " {}",
+        "exec": "dnf check-update -q | wc -l",
+        "tooltip": false,
+        "interval": 3600,
+        "on-click": "kitty --hold sudo dnf upgrade && notify-send 'The system has been updated' "
     },
     "custom/wallpaper":{
         "format":" ",

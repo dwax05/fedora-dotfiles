@@ -1,13 +1,5 @@
-[2023-09-24 01:16:45.883][verbose] Chromium sandbox is enabled
-[2023-09-24 01:16:45.884][info] Running version 2023.4
-[2023-09-24 01:16:45.988][info] Detected locale: en-US
-[2023-09-24 01:16:46.008][info] Connected to the daemon
-[2023-09-24 01:16:46.067][info] Skip autoconnect because GUI setting is disabled
-[2023-09-24 02:16:46.020][verbose] GRPC Channel connectivity state changed to 2
-[2023-09-24 03:16:46.024][verbose] GRPC Channel connectivity state changed to 2
-[2023-09-24 04:16:46.024][verbose] GRPC Channel connectivity state changed to 2
-[2023-09-24 05:16:46.030][verbose] GRPC Channel connectivity state changed to 2
-[2023-09-24 05:33:10.839][info] before-quit received
-[2023-09-24 05:33:10.839][info] Quit initiated
-[2023-09-24 05:33:10.839][info] Unsubscribed from the daemon events
-[2023-09-24 05:33:10.846][verbose] GRPC Channel connectivity state changed to 4
+[2023-09-24 18:49:35.849][verbose] Chromium sandbox is enabled
+[2023-09-24 18:49:35.849][info] Running version 2023.4
+[2023-09-24 18:49:35.941][info] Detected locale: en-US
+[2023-09-24 18:49:35.965][info] Connected to the daemon
+[2023-09-24 18:49:36.001][info] Skip autoconnect because GUI setting is disabled

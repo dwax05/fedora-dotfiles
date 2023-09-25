@@ -1,5 +1,9 @@
 #!/bin/bash
 
+MUTEX="${HOME}/.config/lock/river-lock"
+LOG="${HOME}/.config/lock/lock-log"
+NOLOCK="${HOME}/.config/lock/NOLOCK"
+
 img=$(find ${HOME}/.local/wallpapers/normal -type f | shuf -n 1)
 
 #scaleImg=$(feh --bg-fill "$img")
