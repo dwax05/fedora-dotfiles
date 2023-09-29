@@ -1,0 +1,15 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+1462x914 screen: Height=870
+1462x914 screen: Width=794
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAxoAAANBAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[SideBar]
+InformationSplitterSizes=206,247

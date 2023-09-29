@@ -18,11 +18,15 @@ mkcd() {
     cd "$1"
 }
 
+goto() {
+    cd $1 || zoxide $1
+}
+
 e() {
     if [[ -n $1 ]]; then 
-        file=$(fd . $1 | fzf)
+        file=$(fd --type file . $1 | fzf)
     else
-        file=$(fd | fzf)
+        file=$(fd --type file | fzf)
     fi
     [[ -n $file ]] && $EDITOR $file
 }
@@ -31,7 +35,7 @@ e() {
 alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
-	rm="rm -vI" \
+    rm="rm -vI" \
 	mkd="mkdir -pv" \
 
 # Colorize commands when possible.
@@ -53,10 +57,16 @@ alias \
     tm="tmux attach || tmux new-session"
 
 # Replace ls with eza
-alias \
-    ll="eza -l --icons" \
-    la="eza -Ga --icons" \
-    lt="eza -lT --icons" \
-    lta="eza -lTa --icons" \
-    l="eza -l --icons"
+# alias \
+#     ll="eza -l --icons" \
+#     la="eza -Ga --icons" \
+#     lt="eza -lT --icons" \
+#     lta="eza -lTa --icons" \
+#     l="eza -l --icons"
 
+
+alias \
+    ll="eza -l" \
+    la="eza -Ga" \
+    lt="eza -lT" \
+    lta="eza -lTa" \

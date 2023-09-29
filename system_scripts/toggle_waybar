@@ -1,0 +1,4 @@
+#!/bin/sh
+
+flags="-c $HOME/.config/waybar/hyprdots/config.jsonc -s $HOME/.config/waybar/hyprdots/style.css"
+killall waybar || waybar $flags &

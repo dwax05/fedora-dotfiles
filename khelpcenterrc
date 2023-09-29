@@ -1,0 +1,15 @@
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[MainWindow]
+1463x914 screen: Height=854
+1463x914 screen: Width=1445
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABaUAAAMRAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[MainWindowState]
+Splitter=398,1046
+
+[Search]
+ScopeSelection=0

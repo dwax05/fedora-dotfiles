@@ -1,0 +1,25 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="EditorBackSpace">
+      <i c="1" l="1695777144604" />
+    </e>
+    <e n="EditorDuplicate">
+      <i c="1" l="1695777156801" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1" l="1695777145680" />
+    </e>
+    <e n="WelcomeScreen.OpenDirectoryProject">
+      <i c="1" l="1695777079920" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1695777106124" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="3" l="1695777388186" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="2" l="1695777151344" />
+    </e>
+  </component>
+</application>

@@ -3,14 +3,14 @@
     border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 10px;
-    min-height: 10px;
+    font-size: 11px;
+    min-height: 11px;
 }
 
 @import "themes/Catppuccin-Mocha.css";
 
 window#waybar {
-    background: @bar-bg;
+    background: transparent;
 }
 
 tooltip {
@@ -101,6 +101,10 @@ tooltip {
 #pulseaudio,
 #mpris,
 #battery,
+#custom-launcher,
+#custom-updates,
+#custom-backlight,
+#custom-wallpaper,
 #custom-updates,
 #custom-wallchange,
 #custom-mode,
@@ -126,26 +130,47 @@ tooltip {
     padding: 0px;
 }
 
+#battery.charging,
+#battery.plugged {
+	color: #9DCD6A;
+}
+
+#battery.critical:not(.charging) {
+    color: #DF8B5C;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #B5E8E0;
+    }
+}
+
+
 #custom-r_end {
     border-radius: 0px 20px 20px 0px;
-    margin-right: 8px;
+    margin-right: 5px;
     padding-right: 0px;
 }
 
 #custom-l_end {
     border-radius: 20px 0px 0px 20px;
-    margin-left: 8px;
+    margin-left: 5px;
     padding-left: 0px;
 }
 
 #custom-sr_end {
     border-radius: 0px;
-    margin-right: 8px;
+    margin-right: 5px;
     padding-right: 0px;
 }
 
 #custom-sl_end {
     border-radius: 0px;
-    margin-left: 8px;
+    margin-left: 5px;
     padding-left: 0px;
 }

@@ -4,41 +4,42 @@
 // sourced from header module //
 
     "layer": "top",
-    "position": "bottom",
+    "position": "top",
     "mod": "dock",
-    "height": 29,
+    "height": 32,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
 
+    // positions generated based on config.ctl //
 
-// positions generated based on config.ctl //
+    "modules-left": ["custom/padd","custom/l_end","custom/launcher","custom/r_end","custom/l_end","cpu","memory","custom/r_end","custom/l_end","custom/updates","custom/r_end","custom/l_end","tray", "custom/r_end","custom/l_end","wlr/taskbar","custom/r_end","custom/padd"],
+    "modules-center": ["custom/padd","custom/l_end","hyprland/workspaces","custom/r_end",  "custom/padd"],
+    "modules-right": ["custom/padd", "custom/l_end","custom/wallpaper","custom/r_end", "custom/l_end","pulseaudio", "custom/r_end","custom/l_end","battery","custom/r_end","custom/l_end","clock","custom/r_end","custom/l_end","custom/power","custom/r_end","custom/padd"],
 
-	"modules-left": ["custom/padd","custom/l_end","cpu","memory","custom/r_end","custom/l_end","clock","custom/r_end","custom/l_end","wlr/workspaces","custom/r_end","custom/padd"],
-//	"modules-left": ["custom/padd","custom/l_end","clock","custom/r_end","custom/l_end","cpu","memory","custom/r_end","custom/l_end","wlr/workspaces","custom/r_end","custom/padd"],
-	"modules-center": ["custom/padd","custom/l_end","wlr/taskbar","custom/r_end","custom/padd"],
-	"modules-right": ["custom/padd","custom/l_end","network","pulseaudio","custom/r_end","custom/l_end","battery","custom/r_end","custom/l_end","custom/power","custom/r_end","custom/padd"],
-
-
-// sourced from modules based on config.ctl //
+    // sourced from modules based on config.ctl //
     "battery": {
         "states": {
             "good": 95,
-            "warning": 30,
+            "warning": 50,
             "critical": 20
         },
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-alt": "{icon} {time}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""],
+    },
+
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "wofi -show drun -c $HOME/.config/wofi/river/config -s $HOME/.config/wofi/river/style.css",
+        "on-click-right": "killall wofi",
+        "tooltip": false,
     },
 
     "cpu": {
         "interval": 10,
         "format": "󰍛 {usage}%",
-        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
     },
 
     "memory": {
@@ -56,7 +57,7 @@
         "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
@@ -67,26 +68,23 @@
             "4": [],
             "5": [],
             "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
         }
     },
 
 	"wlr/taskbar": {
 		"format": "{icon}",
-		"icon-size": 17,
+		"icon-size": 19,
 		"icon-theme": "Tela-circle-dracula",
         "spacing": 0,
+        "active-first": true,
 		"tooltip-format": "{title}",
 		"on-click": "activate",
-		"on-click-middle": "close",
 		"ignore-list": [
-			"Kitty"
+			"blueman-manager",
+            "psst-gui",
 		],
 		"app_ids-mapping": {
-			"firefoxdeveloperedition": "firefox-developer-edition"
+			"firefoxdeveloperedition": "firefox-developer-edition",
 		}
 	},
 
@@ -112,11 +110,11 @@
 
     "pulseaudio": {
         "format": "{icon}{volume}%",
-        "format-muted": "婢",
+        "format-muted": "婢 ",
         "on-click": "pavucontrol -t 3",
         "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh m",
-        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh i",
-        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh d",
+        "on-scroll-up": "pamixer -i 1",
+        "on-scroll-down": "pamixer -d 1",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {
@@ -141,30 +139,41 @@
         "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
         "scroll-step": 5
     },
-
-    "custom/updates": {
-        "format": "󰮯 {}",
-        // "exec": "i=$(); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",
-        "on-click": "kitty -e sudo dnf upgrade",
+	"custom/backlight": {
+		"tooltip": false,
+		"format": " {}",
+        "exec": "brightnessctl | grep '%' | awk '{print $4}' | sed 's/(//g' | sed 's/)//g'",
+		"interval": 1,
+        "on-scroll-up": "brightnessctl set 1%+",
+		"on-scroll-down": "brightnessctl set 1%-"
+	},
+    "custom/updates":{
+        "format": " {}",
+        "exec": "dnf check-update -q | wc -l",
+        "tooltip": false,
         "interval": 7200,
-        "tooltip": true
+        "on-click": "kitty --hold sudo dnf upgrade && notify-send 'The system has been updated' "
     },
-
+    "custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc",
+        "tooltip": false,
+    },
     "tray": {
         "icon-size": 17,
         "spacing": 5
     },
 
     "custom/power": {
-        "format": "{}",
-        "exec": "echo ; echo  logout",
-        "on-click": "wlogout -b 2 -c 0 -r 0 -L 930 -R 930 -T 300 -B 300 --protocol layer-shell",
-        "interval" : 86400, // once every day
+        "format": "{}",
+        "exec": "echo ",
+        "on-click": "wlogout",
+        "interval": 86400,
         "tooltip": true
     },
 
 
-// modules for padding //
+    // modules for padding //
 
     "custom/l_end": {
         "format": " ",

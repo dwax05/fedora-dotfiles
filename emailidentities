@@ -1,0 +1,13 @@
+[General]
+Default Identity=216598030
+
+[Identity #0]
+Default Domain=asahi-fedora
+Disable Fcc=false
+Identity=Dylan Wax
+Image Location=
+Inline Signature=
+Name=Dylan Wax
+Override Encryption Defaults=false
+Signature Enabled=false
+uoid=216598030

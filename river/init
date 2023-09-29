@@ -94,24 +94,18 @@ riverctl map-pointer normal $mod BTN_RIGHT resize-view
 
 for i in $(seq 1 9)
 do
-    tags=$((1 << ($i - 1)))
+    tags="$((1 << ($i - 1)))"
 
     # Mod+[1-9] to focus tag [0-8]
     riverctl map normal $mod $i set-focused-tags $tags
 
-    # Mod+Shift+[1-9] to tag focused view with tag [0-8]
+    # Mod+Shift+[1-9] to tag focused view with tag [0-9]
     riverctl map normal $mod+Shift $i set-view-tags $tags
     
-    # Alt+[1-9] to tag focused view with tag [0-8]
+    # Alt+[1-9] to tag focused view with tag [0-9]
     riverctl map normal Mod1 $i toggle-focused-tags $tags
 
-    # Mod+Ctrl+[1-9] to toggle focus of tag [0-8]
-    riverctl map normal $mod+Control $i toggle-focused-tags $tags
-
-    # Mod+Shift+Ctrl+[1-9] to toggle tag [0-8] of focused view
-    # riverctl map normal $mod+Shift+Control $i toggle-view-tags $tags
-    
-    # Alt+Shift+[1-9] to toggle tag [0-8] of focused view
+    # Alt+Shift+[1-9] to toggle tag [0-9] of focused view
     riverctl map normal Mod1+Shift $i toggle-view-tags $tags
 done
 
@@ -178,8 +172,8 @@ do
     riverctl map $mode None XF86AudioNext  spawn 'playerctl next'
 
     # Control screen backlight brighness
-    riverctl map $mode None XF86MonBrightnessUp   spawn "brightnessctl set 1%+"
-    riverctl map $mode None XF86MonBrightnessDown spawn "brightnessctl set 1%-"
+    riverctl map $mode None XF86MonBrightnessUp   spawn "brightnessctl set 3%+"
+    riverctl map $mode None XF86MonBrightnessDown spawn "brightnessctl set 3%-"
 done
 
 # Set background and border color

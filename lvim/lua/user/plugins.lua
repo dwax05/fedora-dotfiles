@@ -1,16 +1,12 @@
 lvim.builtin.nvimtree.active = false
 
 lvim.plugins = {
-    -- { "vimwiki/vimwiki" },
-    -- { "lunarvim/colorschemes" },
     { "MunifTanjim/nui.nvim" },
-    { "VonHeikemen/fine-cmdline.nvim" },
     { "ThePrimeagen/harpoon" },
     { "roobert/activate.nvim" },
     { "kdheepak/lazygit.nvim" },
     { "easymotion/vim-easymotion" },
     { "kylechui/nvim-surround" },
-    { "rktjmp/lush.nvim" },
     { "ellisonleao/gruvbox.nvim" },
     { "rebelot/kanagawa.nvim" },
     { "rose-pine/neovim" },
@@ -23,7 +19,7 @@ lvim.plugins = {
     { "lewis6991/gitsigns.nvim" },
     { "romgrk/barbar.nvim" },
     { "simrat39/rust-tools.nvim" },
-    { "kovetskiy/sxhkd-vim" },
+    { "neovim/nvim-lspconfig" },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",
@@ -45,4 +41,6 @@ lvim.plugins = {
             }
         end,
     },
+    -- { "Alexis12119/nightly.nvim" },
+    -- { "kovetskiy/sxhkd-vim" },
 }
