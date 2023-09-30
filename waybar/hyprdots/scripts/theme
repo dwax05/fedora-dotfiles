@@ -1,0 +1,11 @@
+#!/bin/sh
+
+themedir="$HOME/.config/waybar/hyprdots/themes"
+theme="$(fd . $themedir | shuf -n1)"
+
+rm $HOME/.config/waybar/hyprdots/theme.css 
+ln -s $theme $HOME/.config/waybar/hyprdots/theme.css
+
+killall waybar
+sleep 0.3s
+sh $HOME/.config/system_scripts/toggle_waybar

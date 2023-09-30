@@ -13,6 +13,13 @@ se() {
 	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
 }
 
+share() {
+	choice="$(du -a .local/bin .config | awk '{print $2}' | fzf)"
+    [ -f "$choice" ] && link=$(curl -sF "file=@$choice" https://0x0.st)
+    wl-copy $link
+    echo $link
+}
+
 mkcd() {
     mkdir -p "$1"
     cd "$1"

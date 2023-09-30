@@ -9,15 +9,15 @@
   "volume": 1.0,
   "last_route": {
     "PlaylistDetail": {
-      "id": "1H96bdzqNAE25TXYPP4buO",
-      "name": "i’ll name it later "
+      "id": "37i9dQZF1E352mkiPt7z0Z",
+      "name": "Daily Mix 1"
     }
   },
-  "queue_behavior": "Sequential",
+  "queue_behavior": "Random",
   "show_track_cover": true,
   "window_size": {
-    "width": 794.0,
-    "height": 870.0
+    "width": 1160.0,
+    "height": 696.0
   },
   "slider_scroll_scale": {
     "scale": 3.0,

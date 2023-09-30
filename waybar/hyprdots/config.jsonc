@@ -6,7 +6,7 @@
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "height": 32,
+    "height": 31,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -27,6 +27,7 @@
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
+        "tooltip-format": "full in {time}",
         "format-icons": ["", "", "", "", "", "", "", "", "", "", ""],
     },
 
@@ -58,8 +59,10 @@
     },
 
     "hyprland/workspaces": {
+        "sort-by-number": true,
         "disable-scroll": true,
         "all-outputs": true,
+        "format": "{name}",
         "on-click": "activate",
         "persistent_workspaces": {
             "1": [],
@@ -68,6 +71,14 @@
             "4": [],
             "5": [],
             "6": [],
+        },
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
         }
     },
 
