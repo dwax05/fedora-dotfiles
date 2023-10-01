@@ -22,8 +22,8 @@ BorderActivateAll=9
 
 [NightColor]
 Active=true
-Mode=Times
-NightTemperature=2500
+Mode=Constant
+NightTemperature=2100
 TransitionTime=1
 
 [Plugins]
@@ -56,6 +56,9 @@ tiles={"layoutDirection":"horizontal","tiles":[]}
 [Windows]
 ElectricBorderMaximize=false
 ElectricBorderTiling=false
+
+[Xwayland]
+Scale=1.75
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=

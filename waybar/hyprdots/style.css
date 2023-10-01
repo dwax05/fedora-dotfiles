@@ -14,11 +14,11 @@ window#waybar {
 }
 
 tooltip {
-    background: @tool-bg;
-    color: @tool-color;
-    border-radius: 20px;
+    border-radius: 0px;
     border-width: 1px;
     border-style: solid;
+    background: @tool-bg;
+    color: @tool-color;
     border-color: @tool-border;
 }
 
@@ -56,6 +56,11 @@ tooltip {
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#workspaces button.active:hover {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
 #taskbar button {
     box-shadow: none;
 	text-shadow: none;
@@ -89,6 +94,16 @@ tooltip {
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
+
+#taskbar button.active:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-color;
+    padding-left: 11px;
+    padding-right: 11px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
 
 #cpu,
 #memory,

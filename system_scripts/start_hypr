@@ -16,5 +16,5 @@ $HOME/.local/bin/swww-daemon &
 sh ~/.config/system_scripts/pkill_bc &
 nm-applet --indicator &
 blueman-applet &
-sh ~/.config/eww/executable_startup &
+# sh ~/.config/eww/executable_startup &
 swayidle -w timeout 10 ./wayland_session_lock &

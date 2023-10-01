@@ -1,5 +1,2 @@
-[2023-09-29 17:31:07.154][verbose] Chromium sandbox is enabled
-[2023-09-29 17:31:07.155][info] Running version 2023.4
-[2023-09-29 17:31:07.244][info] Detected locale: en-US
-[2023-09-29 17:31:07.267][info] Connected to the daemon
-[2023-09-29 17:31:07.310][info] Skip autoconnect because GUI setting is disabled
+[2023-09-30 06:23:20.658][verbose] Chromium sandbox is enabled
+[2023-09-30 06:23:20.658][info] Running version 2023.4

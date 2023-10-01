@@ -6,6 +6,7 @@ lvim.plugins = {
     { "roobert/activate.nvim" },
     { "kdheepak/lazygit.nvim" },
     { "easymotion/vim-easymotion" },
+    { "elkowar/yuck.vim" },
     { "kylechui/nvim-surround" },
     { "ellisonleao/gruvbox.nvim" },
     { "rebelot/kanagawa.nvim" },

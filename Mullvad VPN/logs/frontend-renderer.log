@@ -1,2 +1,9 @@
-[2023-09-29 17:31:18.192][verbose] Tunnel state: connected
-[2023-09-29 17:31:18.193][verbose] Initial: Wrong content height: 593, expected 568
+[2023-10-01 01:37:28.924][verbose] Tunnel state: connected
+[2023-10-01 01:37:28.925][verbose] Initial: Wrong content height: 593, expected 568
+[2023-10-01 01:39:24.503][verbose] Resize: Wrong content height: 569, expected 568
+[2023-10-01 11:39:49.589][verbose] Tunnel state: error
+[2023-10-01 11:39:49.597][verbose] Tunnel state: error
+[2023-10-01 11:39:53.265][verbose] Tunnel state: connecting
+[2023-10-01 11:39:53.271][verbose] Tunnel state: connecting
+[2023-10-01 11:39:53.408][verbose] Tunnel state: connected
+[2023-10-01 11:39:53.418][verbose] Tunnel state: connected

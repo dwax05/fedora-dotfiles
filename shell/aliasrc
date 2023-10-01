@@ -61,19 +61,20 @@ alias \
 	sdn="shutdown -h now" \
 	v="$EDITOR" \
 	z="zoxide" \
-    tm="tmux attach || tmux new-session"
+    nb="newsboat" \
+    tm="tmux attach || tmux new-session" \
 
 # Replace ls with eza
 # alias \
-#     ll="eza -l --icons" \
-#     la="eza -Ga --icons" \
-#     lt="eza -lT --icons" \
-#     lta="eza -lTa --icons" \
-#     l="eza -l --icons"
+#     ll="eza -l --group-directories-first --icons" \
+#     la="eza -Ga --group-directories-first --icons" \
+#     lt="eza -lT --group-directories-first --icons" \
+#     lta="eza -lTa --group-directories-first --icons" \
+#     l="eza -l --group-directories-first --icons"
 
 
 alias \
-    ll="eza -l" \
-    la="eza -Ga" \
-    lt="eza -lT" \
-    lta="eza -lTa" \
+    ll="eza -l --group-directories-first" \
+    la="eza -Ga --group-directories-first" \
+    lt="eza -lT --group-directories-first" \
+    lta="eza -lTa --group-directories-first" \

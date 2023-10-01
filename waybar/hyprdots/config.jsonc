@@ -73,12 +73,12 @@
             "6": [],
         },
         "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
+            "1": "www",
+            "2": "dev",
+            "3": "edu",
+            "4": "tty",
+            "5": "etc",
+            "6": "mus",
         }
     },
 
@@ -163,7 +163,7 @@
         "exec": "dnf check-update -q | wc -l",
         "tooltip": false,
         "interval": 7200,
-        "on-click": "kitty --hold sudo dnf upgrade && notify-send 'The system has been updated' "
+        "on-click": "kitty --hold sudo dnf upgrade && notify-send 'The system has been updated'"
     },
     "custom/wallpaper":{
         "format":" ",
@@ -180,7 +180,7 @@
         "exec": "echo ",
         "on-click": "wlogout",
         "interval": 86400,
-        "tooltip": true
+        "tooltip": false,
     },
 
 
