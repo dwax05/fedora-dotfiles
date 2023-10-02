@@ -5,9 +5,24 @@ rice=$(ls $themedir | wofi --show dmenu) || exit
 
 echo $rice > $HOME/.cache/rice
 
-killall toggle_waybar waybar
-sleep 0.2
-sh $HOME/.config/system_scripts/toggle_waybar &
 
+# wallpaper
+wallpaperdir="normal"
+[[ -d $HOME/.local/wallpapers/$rice ]] && wallpaperdir=$rice
+
+## map different rices to different wallpaper directories
+[[ $rice == "1amSimple" ]] && wallpaperdir="oglo"
+
+echo $wallpaperdir > $HOME/.cache/wallpaperdir
+
+# waybar
+killall toggle_waybar waybar
+
+# hyprland
 ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
+
+sleep 0.2
+
+sh $HOME/.config/system_scripts/pkill_bc
+sh $HOME/.config/system_scripts/toggle_waybar &
 hyprctl reload

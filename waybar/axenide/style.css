@@ -1,0 +1,143 @@
+/*
+     ___                    _     __    _     
+    /   |  _  _____  ____  (_)___/ /__ ( )_____
+   / /| | | |/_/ _ \/ __ \/ / __  / _ \|// ___/
+  / ___ |_>  </  __/ / / / / /_/ /  __/ (__  )
+ /_/  |_/_/|_|\___/_/ /_/_/\__,_/\___/ /____/ 
+ | |     / /___ ___  __/ /_  ____ ______      
+ | | /| / / __ `/ / / / __ \/ __ `/ ___/      
+ | |/ |/ / /_/ / /_/ / /_/ / /_/ / /          
+ |__/|__/\__,_/\__, /_.___/\__,_/_/           
+              /____/                          
+
+ https://github.com/Axenide/Dotfiles
+*/
+
+@define-color black     #1B1D1D;
+@define-color brblack   #47423E;
+@define-color red       #DB4740;
+@define-color green     #A1A740;
+@define-color yellow    #DF9238;
+@define-color blue      #619A96;
+@define-color purple    #C27491;
+@define-color aqua      #79A976;
+@define-color gray      #BEAC8E;
+@define-color brgray    #928374;
+@define-color brred     #F3594B;
+@define-color brgreen   #B1B946;
+@define-color bryellow  #E9B243;
+@define-color brblue    #80AA9E;
+@define-color brpurple  #D3869B;
+@define-color braqua    #8CBA7F;
+@define-color white     #E0CDA5;
+@define-color bg2       #504945;
+
+* {
+	border: none;
+	border-radius: 0px;
+	font-family: 'Iosevka';
+	font-size: 11pt;
+	font-style: normal;
+	min-height: 0;
+}
+
+window#waybar {
+	background: black;
+	border: 2px solid @brblack;
+	border-radius: 10px;
+	color: @white;
+}
+
+#workspaces {
+	border: solid 0px @red;
+}
+
+#workspaces button {
+	border-radius: 0px;
+	color: @white;
+	border: solid 0px @red;
+	transition: all 0.1s ease-in-out;
+}
+
+#workspaces button.persistent {
+	color: @brblack;
+	border: solid 0px @red;
+}
+
+#workspaces button.active {
+	color: @white;
+	border-bottom: solid 3px @red;
+}
+
+#workspaces button:hover {
+	background-color: transparent;
+	color: @brgreen;
+}
+
+#tray {
+	padding: 0px 10px;
+	margin-right: 5px;
+	border-right: solid 1px @black;
+}
+
+#clock {
+	color: @brgreen;
+	padding-left: 10px;
+	padding-right: 12px;
+	margin-left: 5px;
+	font-weight: bold;
+	border-left: solid 1px @black;
+}
+
+#custom-launcher {
+	color: @red;
+	background-color: transparent;
+	font-family: 'Symbols Nerd Font';
+	font-size: 20px;
+	border-right: solid 1px @black;
+	padding: 10px 12px 10px 8px;
+	margin: 0 0 0 5px;
+}
+
+#custom-playerctl {
+	font-weight: bold;
+}
+
+#cpu, #memory, #disk, #custom-gpu-usage {
+	background-color: #000000;
+	border-radius: 16px;
+	margin: 5px;
+	padding: 0px 10px 0px 10px;
+	font-weight: bold;
+	border: solid 2px @black;
+	box-shadow: 0px 0px 3px rgba(0,0,0,1);
+	text-shadow: 0px 0px 3px @white;
+}
+
+#custom-hyprpicker, #bluetooth, #network, #pulseaudio, #backlight, #battery, #custom-notifications, #custom-wallpaper {
+	color: @white;
+	font-family: 'Symbols Nerd Font';
+	font-size: 10pt;
+	margin: 0;
+	padding: 0 8px 0 8px;
+}
+
+#bluetooth.connected {
+	color: @brgreen;
+}
+
+#bluetooth.off {
+	color: @brblack;
+}
+
+#pulseaudio.muted {
+	color: @brblack;
+}
+
+#battery.charging {
+	color: @brgreen;
+}
+
+#battery.warning:not(.charging) {
+	color: @red;
+}

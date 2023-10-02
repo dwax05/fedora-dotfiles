@@ -1,6 +1,7 @@
 lvim.builtin.nvimtree.active = false
 
 lvim.plugins = {
+    { "projekt0n/caret.nvim" },
     { "udalov/kotlin-vim" },
     { "MunifTanjim/nui.nvim" },
     { "ThePrimeagen/harpoon" },

@@ -32,11 +32,15 @@
             "6": [],
         },
         "format-icons": {
-            "2": "一",
-            "3": "二",
-            "4": "三",
-            "5": "四",
-            "6": "五",
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
             "urgent": "",
             "active": "",
             "default": "󰧞",
@@ -75,6 +79,7 @@
     "custom/wallpaper":{
         "format":" ",
         "on-click": "bash ~/.config/system_scripts/pkill_bc",
+        "on-click-right": "sh ~/.config/system_scripts/riceswitcher",
         "tooltip": false,
     },
     "battery": {

@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-[[ -n $wallpapers_path ]] || wallpapers_path="$HOME/.local/wallpapers/normal"
+wallpaperdir="$HOME/.local/wallpapers/$(cat $HOME/.cache/wallpaperdir)"
 
 while true; do
-  wallpaper=$(find $wallpapers_path -type f | shuf -n 1)
-  # wallpaper=$HOME/.local/wallpapers/normal/mountain-top-snow-landscape-1929431-wallhere.com.jpg
+  wallpaper=$(find $wallpaperdir -type f | shuf -n 1)
   $HOME/.local/bin/swww img $wallpaper --transition-type wipe --transition-angle 30 --transition-step 90 --transition-fps 60
   rm $HOME/.cache/wallpaper.png
   ln -s "$wallpaper" $HOME/.cache/wallpaper.png
