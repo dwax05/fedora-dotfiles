@@ -1,20 +1,21 @@
 #!/bin/sh
-
 # WIP
+
+rice=$(cat $HOME/.cache/rice)
 
 # auto starting apps
 wlr-randr --output eDP-1 --scale 1.75 
-killall -q swaync swayidle swww swww-daemon waybar dunst nm-applet swayidle blueman-applet xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland
+killall -q powerdevil plasma-workspace swaync swayidle swww dunst swww-daemon waybar swaync nm-applet swayidle blueman-applet xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland xdg-desktop-portal-kde
+
 
 /usr/libexec/xdg-desktop-portal-hyprland &
 sleep 2
 /usr/lib/xdg-desktop-portal &
 
-waybar -c $HOME/.config/waybar/hyprdots/config.jsonc -s $HOME/.config/waybar/hyprdots/style.css &
-dunst &
 $HOME/.local/bin/swww-daemon &
+waybar -c $HOME/.config/waybar/${rice}/config.jsonc -s $HOME/.config/waybar/${rice}/style.css &
+swaync &
 sh ~/.config/system_scripts/pkill_bc &
 nm-applet --indicator &
 blueman-applet &
-# sh ~/.config/eww/executable_startup &
 swayidle -w timeout 10 ./wayland_session_lock &

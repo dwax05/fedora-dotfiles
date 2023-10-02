@@ -10,6 +10,7 @@ DisableWhileTyping=false
 NaturalScroll=false
 
 [Mouse]
+X11LibInputXAccelProfileFlat=true
 cursorTheme=Bibata-Modern-Ice
 
 [Tmp]

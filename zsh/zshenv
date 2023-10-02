@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+export BUN_INSTALL="$HOME/.local/share/bun"
+
+[ -d "$BUN_INSTALL/bin" ] && export PATH="$PATH:$BUN_INSTALL/bin"
+
+[ -d "$HOME/.local/bin" ] && export PATH="$PATH:$HOME/.local/bin"
+[ -d "$HOME/.cargo/bin" ] && export PATH="$PATH:$HOME/.cargo/bin"

@@ -1047,6 +1047,7 @@ Speedbar Width[$d]
 View Style[$d]
 
 [KScreen]
+ScaleFactor[$d]
 ScreenScaleFactors[$d]
 XwaylandClientsScale[$d]
 

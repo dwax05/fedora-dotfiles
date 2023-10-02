@@ -9,6 +9,6 @@ while true; do
   rm $HOME/.cache/wallpaper.png
   ln -s "$wallpaper" $HOME/.cache/wallpaper.png
   echo "$wallpaper" > $HOME/.cache/wallpaper
-  sleep 8m 
+  sleep 18m 
 done
 sleep 1m

@@ -1,4 +1,4 @@
 #!/bin/sh
 
-flags="-c $HOME/.config/waybar/hyprdots/config.jsonc -s $HOME/.config/waybar/hyprdots/style.css"
-killall waybar || waybar $flags &
+rice=$(cat $HOME/.cache/rice)
+killall waybar || waybar -c $HOME/.config/waybar/${rice}/config.jsonc -s $HOME/.config/waybar/${rice}/style.css & 

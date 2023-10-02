@@ -22,8 +22,8 @@ BorderActivateAll=9
 
 [NightColor]
 Active=true
-Mode=Constant
-NightTemperature=2100
+DayTemperature=4500
+NightTemperature=2300
 TransitionTime=1
 
 [Plugins]
@@ -49,6 +49,9 @@ DefaultEngine=1
 
 [Tiling]
 padding=4
+
+[Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
+tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Tiling][c8a4a66d-bbca-5e7f-8a37-ce3b4a705568]
 tiles={"layoutDirection":"horizontal","tiles":[]}

@@ -6,9 +6,9 @@
         "margin-bottom": 0,
         "margin-right": 10,
         "spacing": 5, // Gaps between modules (4px)
-        "modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces"],
-        "modules-center": ["hyprland/window"],
-        "modules-right": ["pulseaudio", "battery", "clock"],
+        "modules-left": ["custom/launcher", "cpu", "memory", "tray", "custom/playerlabel"],
+        "modules-center": ["hyprland/workspaces"],
+        "modules-right": ["custom/wallpaper", "pulseaudio", "battery", "clock"],
         "wlr/workspaces": {
             "format": "{icon}",
             "on-click": "activate",
@@ -19,27 +19,86 @@
                 "4": "",
                 "5": "",
                 "urgent": "",
-                "active": "",
-                "default": ""
-            }
+            "active": "",
+            "default": ""
         },
-        "hyprland/window": {
-            "format": "{}",
-            "max-length":30,
-        },
-        "tray": {
-            "spacing": 10
-        },
-        "clock": {
-            "format": "<span color='#bf616a'> </span>{:%a %b %d}",
-            "format-alt": "<span color='#bf616a'> </span>{:%I:%M %p}",
-            "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        },
+    },
 
-        "cpu": {
-            "interval": 10,
-            "format": " {}%",
-            "max-length": 10,
+    "custom/playerctl": {
+        "format": "{icon}",
+        "return-type": "json",
+        "max-length": 64,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click-middle": "playerctl play-pause",
+        "on-click": "playerctl previous",
+        "on-click-right": "playerctl next",
+        "format-icons": {
+            "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭</span>",
+            "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
+        },
+    },
+
+    "custom/playerlabel": {
+        "format": "<span>{}</span>",
+        "return-type": "json",
+        "max-length": 48,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click-middle": "playerctl play-pause",
+        "on-click": "playerctl previous",
+        "on-click-right": "playerctl next",
+        "format-icons": {
+            "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭</span>",
+            "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
+        },
+    },
+
+    "custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc",
+        "tooltip": false,
+    },
+    "hyprland/workspaces": {
+        "sort-by-number": true,
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+        },
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+    },
+    "hyprland/window": {
+        "format": "{}",
+                "max-length":30,
+            },
+            "tray": {
+                "spacing": 10
+            },
+            "clock": {
+                "format": "<span color='#bf616a'> </span>{:%a %b %d}",
+                "format-alt": "<span color='#bf616a'> </span>{:%I:%M %p}",
+                "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+            },
+
+            "cpu": {
+                "interval": 10,
+                "format": " {}%",
+                "max-length": 10,
             "on-click": "",
         },
         "memory": {

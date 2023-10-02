@@ -38,6 +38,13 @@ e() {
     [[ -n $file ]] && $EDITOR $file
 }
 
+greet(){
+  # pokemon-colorscripts -r --no-title
+  cowsay "$(fortune)"
+  cat "$HOME/vimwiki/todo.norg" | grep "(-)\|( )" | grep -o '[[:alpha:]].*' | sed 's/^/- /' | sed "s/{[^}]*}//g" | lolcat -r # line at the end of {} items might be a problem eventually, but why slow it down even more when im already using 5 pipes?
+  # cat file | get only todos | remove "(-)" | remove "-" | cut to start | color
+}
+
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	cp="cp -iv" \
@@ -63,6 +70,9 @@ alias \
 	z="zoxide" \
     nb="newsboat" \
     tm="tmux attach || tmux new-session" \
+
+alias \
+    gitc="git clone"
 
 # Replace ls with eza
 # alias \

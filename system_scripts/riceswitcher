@@ -1,0 +1,13 @@
+#!/bin/sh
+
+themedir="$HOME/.config/hypr/themes"
+rice=$(ls $themedir | wofi --show dmenu) || exit
+
+echo $rice > $HOME/.cache/rice
+
+killall toggle_waybar waybar
+sleep 0.2
+sh $HOME/.config/system_scripts/toggle_waybar &
+
+ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
+hyprctl reload

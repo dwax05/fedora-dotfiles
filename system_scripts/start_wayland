@@ -5,12 +5,17 @@
 # auto starting apps
 wlr-randr --output eDP-1 --scale 1.75 
 # wlr-randr --output eDP-1 --scale 2
-killall -q swayidle swww swww-daemon waybar dunst nm-applet
-waybar -c ~/.config/waybar/river/config-river.jsonc -s ~/.config/waybar/river/river_style.css &
-# waybar -c $HOME/.config/waybar/hyprdots/config.jsonc -s $HOME/.config/waybar/hyprdots/style.css &
-dunst -config ~/.config/dunst/dunstrc &
-$HOME/.local/bin/swww-daemon &
+killall -q dunst swaync swayidle swww swww-daemon waybar swaync nm-applet swayidle blueman-applet xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland
+
+/usr/libexec/xdg-desktop-portal-hyprland &
+sleep 2
+/usr/lib/xdg-desktop-portal &
+
+waybar -c ~/.config/waybar/river/config.jsonc -s ~/.config/waybar/river/style.css &
+swaync &
 sh ~/.config/system_scripts/pkill_bc &
+$HOME/.local/bin/swww-daemon &
 nm-applet --indicator &
 blueman-tray
 swayidle -w timeout 10 ./wayland_session_lock &
+
