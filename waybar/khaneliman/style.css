@@ -44,15 +44,14 @@
 * Global configuration for theme 
 * */
 * {
-  font-family: Liga SFMono Nerd Font;
-  font-size: 14px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 12px;
   border-radius: 0.75em;
 }
 
 window#waybar {
   border: 2px solid @surface1;
   background: @theme_base_color;
-  box-shadow: 1px 1px 10px 10px @mantle;
   color: @theme_text_color;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -114,7 +113,7 @@ window.DP-3 #workspaces {
 }
 
 #workspaces label {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #workspaces button {
@@ -220,13 +219,13 @@ window.DP-3 #workspaces {
 }
 
 #clock {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 /* Custom styling for the logout icon on end */
 #custom-wlogout {
-  font-size: 1.75em;
+  font-size: 1.50em;
   padding-right: 0.5em;
   padding-left: 0.5em;
   color: @blue;

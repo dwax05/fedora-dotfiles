@@ -14,7 +14,6 @@
     "cpu",
     "memory",
     "temperature",
-    "custom/separator",
     "custom/window-name",
     "tray"
   ],
@@ -22,7 +21,6 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "battery",
-    "backlight",
     "pulseaudio",
     "custom/right-arr",
     "network",

@@ -5,6 +5,9 @@ PreloadWeight=0
 DialogHeight=84
 DialogWidth=1463
 
+[PlasmaViews][Panel 2]
+panelVisibility=0
+
 [PlasmaViews][Panel 2][Defaults]
 thickness=36
 

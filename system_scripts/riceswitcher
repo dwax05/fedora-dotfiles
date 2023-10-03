@@ -21,6 +21,11 @@ killall toggle_waybar waybar
 # hyprland
 ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
 
+# starship
+starshipdir="default"
+[[ -d $HOME/.config/starship/themes/$rice ]] && starshipdir=$rice
+ln -f $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
+
 sleep 0.2
 
 sh $HOME/.config/system_scripts/pkill_bc

@@ -9,11 +9,11 @@ killall -q powerdevil plasma-workspace swaync swayidle swww dunst swww-daemon wa
 
 
 /usr/libexec/xdg-desktop-portal-hyprland &
-sleep 2
+sleep 0.5
 /usr/lib/xdg-desktop-portal &
 
 $HOME/.local/bin/swww-daemon &
-waybar -c $HOME/.config/waybar/${rice}/config.jsonc -s $HOME/.config/waybar/${rice}/style.css &
+waybar -c $HOME/.config/waybar/$rice/config.jsonc -s $HOME/.config/waybar/$rice/style.css &
 swaync &
 sh ~/.config/system_scripts/pkill_bc &
 nm-applet --indicator &

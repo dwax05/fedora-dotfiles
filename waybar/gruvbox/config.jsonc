@@ -5,26 +5,12 @@
         "hyprland/workspaces",
     ],
     "modules-right": [
-        "custom/progress",
-        "custom/usbguard",
-        "custom/security",
-        "custom/eyes",
-        "custom/yubikey",
-        "custom/decrypted",
-        "custom/systemd",
+        "custom/wallpaper",
         "custom/updates",
-        "custom/mail",
-        "custom/recording",
-        "custom/dnd",
         "pulseaudio",
-        "network",
-        "custom/vpn",
         "cpu",
         "memory",
         "disk",
-        "custom/movie",
-        "backlight",
-        "hyprland/language",
         "battery",
         "clock"
     ],
@@ -32,6 +18,12 @@
          "sort-by-number": true,
          "format": "{icon}",
          "on-click": "activate"
+    },
+    "custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc",
+        "on-click-right": "sh ~/.config/system_scripts/riceswitcher",
+        "tooltip": false,
     },
     "custom/security": {
         "exec": "waybar-security",
@@ -71,16 +63,12 @@
         "return-type": "json",
         "interval": 10
     },
-    "custom/updates": {
-        "format-icons": {
-            "icon": "<span foreground='#928374'> </span>"
-        },
-        "format": "{icon}{}",
-        "exec": "waybar-updates show",
-        "return-type": "json",
-        "signal": 1,
-        "on-click-right": "waybar-updates refresh",
-        "interval": "once"
+    "custom/updates":{
+        "format": " {}",
+        "exec": "dnf check-update -q | wc -l",
+        "tooltip": false,
+        "interval": 7200,
+        "on-click": "kitty --hold sudo dnf upgrade && notify-send 'The system has been updated'"
     },
     "custom/mail": {
         "format-icons": {
@@ -173,9 +161,9 @@
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}\n {bandwidthDownBits}\n {bandwidthUpBits}"
     },
     "pulseaudio": {
-        "format": "<span foreground='#928374'>{icon}</span> {volume}%   {format_source}",
-        "format-bluetooth": "<span foreground='#928374'>{icon}</span> {volume}%   {format_source}",
-        "format-bluetooth-muted": "<span foreground='#928374'> {icon}</span>   {format_source}",
+        "format": "<span foreground='#928374'>{icon}</span> {volume}%",
+        "format-bluetooth": "<span foreground='#928374'>{icon}</span> {volume}%",
+        "format-bluetooth-muted": "<span foreground='#928374'> {icon}</span>",
         "format-muted": "<span foreground='#928374'></span>   {format_source}",
         "format-source": "<span foreground='#928374'></span> {volume}%",
         "format-source-muted": "<span foreground='#928374'></span>",

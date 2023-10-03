@@ -1,30 +1,20 @@
 {
-    "height": 50, 
+    "height": 42, 
     "layer": "top",
     "position": "top",
-    "output": "eDP-1",
     "spacing": 7,
     "modules-left": ["custom/launcher", "cpu", "temperature", "backlight", "custom/dunst"],
-    "modules-center": ["wlr/workspaces"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "network", "battery", "clock", "custom/powermenu"],
 
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
+            "*": 6,
         }
     },
     
@@ -66,18 +56,18 @@
     },
 
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon} {volume}% {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-bluetooth-muted": " {icon}",
         "format-muted": "婢",
         "format-icons": {
-            "headphone": "",
+            "headphone": " ",
             "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " ", " "]
         },
         "on-click-right": "pavucontrol",
 	    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"

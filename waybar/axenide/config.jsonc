@@ -16,13 +16,29 @@
     "position": "top",
     "layer": "top",
     "height": 16,
-    "margin-top": 10,
+    "margin-top": 5,
     "margin-bottom": 0,
     "margin-left": 10,
     "margin-right": 10,
-    "modules-left": ["custom/launcher", "hyprland/workspaces"],
-    "modules-center": ["custom/playerctl"],
-    "modules-right": ["tray", "custom/hyprpicker", "custom/wallpaper", "bluetooth", "network", "pulseaudio", "backlight", "battery", "custom/notifications", "clock"],
+    "modules-left": [
+        "custom/launcher", 
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+        "custom/playerctl",
+    ],
+    "modules-right": [
+        "tray", 
+        "custom/hyprpicker", 
+        "custom/wallpaper", 
+        "bluetooth", 
+        "network", 
+        "pulseaudio", 
+        "backlight", 
+        "battery", 
+        "custom/notifications", 
+        "clock"
+    ],
     // Modules configuration
     "clock": {
         "format": "{:%H:%M:%OS}",
@@ -160,11 +176,11 @@
         "interval": 1
     },
 
-"network": {
-"format-wifi": "󰤨",
-"format-ethernet": " {ifname}",
-"format-linked": " {ifname} (No IP)",
-"format-disconnected": "󰤭",
+    "network": {
+        "format-wifi": "󰤨",
+        "format-ethernet": " {ifname}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "󰤭",
         "format-alt": " {ifname}: {ipaddr}/{cidr}",
         "tooltip-format": "{essid}",
         "on-click-right": "kitty -o initial_window_width=500 -o initial_window_height=500 nmtui",
@@ -175,8 +191,7 @@
         "format-off": "󰂲",
         "format-connected": "󰂱",
         "format-disabled": "󰂲",
-        "on-click": "bash ~/.config/waybar/scripts/bluetoggle.sh",
-        "on-click-right": "kitty -o initial_window_width=500 -o initial_window_height=500 bluetuith",
+        "on-click": "blueman-manager",
         // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
@@ -198,7 +213,6 @@
             "dnd-inhibited-none": "󰂛"
         },
         "return-type": "json",
-        "exec-if": "which swaync-client",
         "exec": "swaync-client -swb",
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",

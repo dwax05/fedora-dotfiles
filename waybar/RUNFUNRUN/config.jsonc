@@ -23,11 +23,12 @@
 
     "modules-center": [
         "custom/media",
+        "hyprland/window"
     ], 
 
     "modules-right": [
-        // "hyprland/window", 
         "tray", 
+        "custom/wallpaper",
         "battery", 
         "backlight",
         "pulseaudio",

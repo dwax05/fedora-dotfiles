@@ -5,9 +5,25 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    //"modules-center": ["hyprland/window"],
-    "modules-right": ["custom/swaync", "custom/menu", "tray", "pulseaudio", "cpu", "memory", "custom/wallpaper", "battery", "battery#bat2", "clock", "custom/powermenu"],
+    "modules-left": [
+        "hyprland/workspaces", 
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "tray", 
+    ],
+    "modules-right": [
+        "custom/swaync", 
+        "custom/menu", 
+        "pulseaudio", 
+        "cpu", 
+        "memory", 
+        "custom/wallpaper", 
+        "battery", 
+        "battery#bat2", 
+        "clock", 
+        "custom/powermenu"
+    ],
     // Modules configuration
     "custom/powermenu": {
         "format": " ",
@@ -22,11 +38,15 @@
     },
     "custom/menu": {
         "format": " ",
-        "on-click": "wofi -show drun -c $HOME/.config/wofi/river/config -s $HOME/.config/wofi/river/style.css",
+        "on-click": "killall waybar; nwg-drawer; $HOME/.config/system_scripts/toggle_waybar",
         "tooltip": false,
     },
     "hyprland/workspaces": {
         "on-click": "activate",
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 45,
     },
     "keyboard-state": {
         "numlock": true,
@@ -141,8 +161,8 @@
     },
     "custom/wallpaper":{
         "format":"   ",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc",
-        "on-click-right": "sh ~/.config/system_scripts/riceswitcher",
+        "on-click": "sh $HOME/.config/system_scripts/pkill_bc",
+        "on-click-right": "sh $HOME/.config/system_scripts/riceswitcher",
         "tooltip": false,
     },
     "pulseaudio": {

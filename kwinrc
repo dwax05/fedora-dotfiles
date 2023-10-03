@@ -23,7 +23,8 @@ BorderActivateAll=9
 [NightColor]
 Active=true
 DayTemperature=4500
-NightTemperature=2300
+Mode=Constant
+NightTemperature=2200
 TransitionTime=1
 
 [Plugins]

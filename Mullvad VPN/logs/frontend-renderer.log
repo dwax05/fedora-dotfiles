@@ -1,4 +1,0 @@
-[2023-10-02 12:46:03.769][verbose] Tunnel state: connected
-[2023-10-02 12:46:03.769][verbose] Initial: Wrong content height: 593, expected 568
-[2023-10-02 12:46:13.774][error] Failed to update the location: 5 NOT_FOUND: no location was found
-[2023-10-02 12:46:13.774][error] Failed to update the location: 5 NOT_FOUND: no location was found
