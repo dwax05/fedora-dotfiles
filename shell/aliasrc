@@ -38,6 +38,32 @@ e() {
     [[ -n $file ]] && $EDITOR $file
 }
 
+greet(){
+    # colorscript -r
+    pokemon-colorscripts -r --no-title
+    # cowsay "$(fortune)"
+    todos=$(cat "$HOME/vimwiki/todo.norg" \
+        | grep "(-)\|( )" \
+        | grep -o '[[:alpha:]].*' \
+        | sed 's/^/- /' \
+        | sed "s/{[^}]*}//g")
+
+    case $(cat $HOME/.cache/rice) in
+        gruvbox)
+            echo $todos
+            ;;
+        Sakura)
+            echo "\033[95m$todos\033[0m"
+            ;;
+        axenide)
+            echo "\033[31m$todos\033[0m"
+            ;;
+        *)
+            echo $todos | lolcat -r
+            ;;
+    esac
+}
+
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	cp="cp -iv" \
@@ -66,15 +92,6 @@ alias \
 
 alias \
     gitc="git clone"
-
-# Replace ls with eza
-# alias \
-#     ll="eza -l --group-directories-first --icons" \
-#     la="eza -Ga --group-directories-first --icons" \
-#     lt="eza -lT --group-directories-first --icons" \
-#     lta="eza -lTa --group-directories-first --icons" \
-#     l="eza -l --group-directories-first --icons"
-
 
 alias \
     ll="eza -la --group-directories-first" \

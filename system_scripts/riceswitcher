@@ -1,7 +1,7 @@
 #!/bin/sh
 
 themedir="$HOME/.config/hypr/themes"
-rice=$(ls $themedir | wofi --show dmenu) || exit
+rice=$(ls $themedir | wofi -i --show dmenu) || exit
 
 echo $rice > $HOME/.cache/rice
 
@@ -20,7 +20,7 @@ echo $wallpaperdir > $HOME/.cache/wallpaperdir
 ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
 
 # starship
-starshipdir="default"
+starshipdir="oglo"
 [[ -d $HOME/.config/starship/themes/$rice ]] && starshipdir=$rice
 ln -f $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
 

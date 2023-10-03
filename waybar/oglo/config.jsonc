@@ -9,12 +9,9 @@
         "hyprland/workspaces", 
         "hyprland/window"
     ],
-    "modules-center": [
-        "tray", 
-    ],
     "modules-right": [
         "custom/swaync", 
-        "custom/menu", 
+        "tray",
         "pulseaudio", 
         "cpu", 
         "memory", 
@@ -31,10 +28,23 @@
         "tooltip": false,
     },
     "custom/swaync": {
-        "format": " ",
-        "on-click": "swaync-client -t",
-        "on-click-right": "swaync-client -C",
         "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "󰂚 <span foreground='#DB4740'><sup></sup></span>",
+            "none": "󰂚 ",
+            "dnd-notification": "󰂛 <span foreground='#DB4740'><sup></sup></span>",
+            "dnd-none": "󰂛 ",
+            "inhibited-notification": "󰂚 <span foreground='#DB4740'><sup></sup></span>",
+            "inhibited-none": "󰂚 ",
+            "dnd-inhibited-notification": "󰂛 <span foreground='#DB4740'><sup></sup></span>",
+            "dnd-inhibited-none": "󰂛 "
+        },
+        "return-type": "json",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
     },
     "custom/menu": {
         "format": " ",
