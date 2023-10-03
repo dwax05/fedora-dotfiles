@@ -20,7 +20,7 @@ window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
 }
-
+ 
 #workspaces button {
   padding: 0 10px;
   background: transparent;
@@ -37,9 +37,6 @@ window#waybar {
   border-bottom: 3px solid @yellow;
 }
 
-#submap {
-  border-bottom: 3px solid @red;
-}
 
 #custom-usbguard,
 #custom-decrypted,
@@ -105,10 +102,6 @@ window#waybar {
   margin: 0 6px;
 }
 
-#tray {
-  margin-left: -1000000px;
-}
-
 #backlight,
 #battery,
 #clock,
@@ -126,6 +119,7 @@ window#waybar {
 #memory,
 #submap,
 #network,
+#tray,
 #pulseaudio {
   color: @foreground;
 }

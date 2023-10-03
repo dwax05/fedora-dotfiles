@@ -1,3 +1,4 @@
+require("user.theme")
 
 lvim.transparent_window = true
 
@@ -38,5 +39,3 @@ vim.opt.updatetime = 50
 -- }
 -- math.randomseed(os.time())
 -- local theme = Colorschemes[math.random(1, 4)]
-
-lvim.colorscheme = "tokyonight"

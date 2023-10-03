@@ -4,6 +4,9 @@
     "modules-left": [
         "hyprland/workspaces",
     ],
+    "modules-center": [
+        "tray",
+    ],
     "modules-right": [
         "custom/wallpaper",
         "custom/updates",
@@ -15,9 +18,30 @@
         "clock"
     ],
     "hyprland/workspaces": {
-         "sort-by-number": true,
-         "format": "{icon}",
-         "on-click": "activate"
+        "all-outputs": false,
+        "format": "{icon}",
+        // "on-scroll-up": "hyprctl dispatch workspace e-1",
+        // "on-scroll-down": "hyprctl dispatch workspace e+1",
+        // "on-click": "activate",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        },
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": []
+        }
     },
     "custom/wallpaper":{
         "format":" ",
@@ -111,7 +135,7 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "<span foreground='#928374'></span> {:%a, %d %b  <span foreground='#928374'></span> %H:%M}"
+        "format": "<span foreground='#928374'></span> {:%a, %d %b  <span foreground='#928374'></span> %I:%M}"
     },
     "cpu": {
         "format": "<span foreground='#928374'></span> {usage}%",
@@ -164,9 +188,7 @@
         "format": "<span foreground='#928374'>{icon}</span> {volume}%",
         "format-bluetooth": "<span foreground='#928374'>{icon}</span> {volume}%",
         "format-bluetooth-muted": "<span foreground='#928374'> {icon}</span>",
-        "format-muted": "<span foreground='#928374'></span>   {format_source}",
-        "format-source": "<span foreground='#928374'></span> {volume}%",
-        "format-source-muted": "<span foreground='#928374'></span>",
+        "format-muted": "<span foreground='#928374'></span> ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -177,8 +199,5 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol",
-        "on-click-right": "env LIBGL_ALWAYS_SOFTWARE=1 helvum"
     }
 }
-
-// vi: ft=json

@@ -98,7 +98,7 @@ symbol = " "
 # format = '[[](bg:#EC912D fg:#464347)$symbol$profile(\($region\))[](bg:#464347 fg:#EC912D)]($style)'
 
 [battery]
-disabled = false
+disabled = true 
 full_symbol = ""
 charging_symbol = " "
 discharging_symbol = " "
@@ -173,10 +173,10 @@ fish_style_pwd_dir_length = 3
 "Pictures" = ""
 "Sources" = ""
 "Downloads" = ""
-"~" = ""
+"~" = " "
 #"~" = "邏"
 # "/" = "  "
-"/" = "  "
+# "/" = "  "
 
 [docker_context]
 # disabled = true
@@ -242,7 +242,7 @@ commit_hash_length = 4
 # format = "[[](bg:#E58F73 fg:#464347)#$hash[](bg:#464347 fg:#E58F73)]($style)"
 
 [git_state]
-#disabled = true (not what im searching for)
+disabled = true
 #style = "bg:#E0B25D fg:111111"
 rebase = "rebasing"
 merge = "merging"
@@ -255,7 +255,7 @@ am_or_rebase = "am/rebase"
 
 
 [git_status]
-disabled = false
+disabled = true
 # style = "bg:#E0B25D fg:#000000"
 style= "italic fg:#9e3737"
 stashed = "  ${count}"
@@ -321,7 +321,7 @@ symbol = "☸︎"
 # format = '[[](bg:#3371E3 fg:#464347)$symbol$context(\($namespace\))[](bg:#464347 fg:#3371E3)]($style)'
 
 [memory_usage]
-disabled = false
+disabled = true 
 symbol = " "
 # style = "bg:#BBBBBB fg:#111111"
 threshold = 75
@@ -451,7 +451,8 @@ symbol = "行"
 
 [time]
 disabled = false
-time_format = " %I:%M %P  %B %d, %Y "
+# time_format = " %I:%M %P  %B %d, %Y "
+time_format = " %I:%M "
 style = "fg:#9b9578"
 format = '[$time]($style)'
 

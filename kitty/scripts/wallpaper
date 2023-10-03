@@ -1,8 +1,0 @@
-#!/bin/sh
-
-[[ -n $wallpaper_path ]] || wallpaper_path="$HOME/.local/wallpapers/normal"
-
-touch $HOME/.cache/kittywallpaper.png
-rm $HOME/.cache/kittywallpaper.png
-wallpaper=$(find $wallpaper_path -type f | shuf -n 1)
-ln -s "$wallpaper" $HOME/.cache/kittywallpaper.png
