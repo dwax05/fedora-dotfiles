@@ -9,12 +9,12 @@ for command in yum mount umount sv dnf updatedb su shutdown poweroff reboot ; do
 done; unset command
 
 se() {
-	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
+	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf --preview='bat -n --color=always ~/.local/bin/{}')"
 	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
 }
 
 share() {
-	choice="$(du -a .local/bin .config | awk '{print $2}' | fzf)"
+	choice="$(du -a .local/bin .config | awk '{print $2}' | fzf )"
     [ -f "$choice" ] && link=$(curl -sF "file=@$choice" https://0x0.st)
     wl-copy $link
     echo $link
@@ -31,9 +31,9 @@ goto() {
 
 e() {
     if [[ -n $1 ]]; then 
-        file=$(fd --type file . $1 | fzf)
+        file=$(fd --type file . $1 | fzf --preview="bat -n --color=always {}")
     else
-        file=$(fd --type file | fzf)
+        file=$(fd --type file | fzf --preview="bat -n --color=always {}")
     fi
     [[ -n $file ]] && $EDITOR $file
 }
@@ -94,7 +94,8 @@ alias \
     gitc="git clone"
 
 alias \
-    ll="eza -la --group-directories-first" \
+    ll="eza -l --group-directories-first" \
     la="eza -Ga --group-directories-first" \
+    lla="eza -la --group-directories-first" \
     lt="eza -lT --group-directories-first" \
     lta="eza -lTa --group-directories-first" \

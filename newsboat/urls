@@ -7,6 +7,7 @@ https://www.numberphile.com/podcast?format=rss "podcasts" "~The Numberphile Podc
 
 https://www.theverge.com/rss/index.xml "~TECH NEWS: The Verge"
 https://www.technologyreview.com/feed/ "~TECH NEWS: MIT Technology Review"
+https://www.reutersagency.com/feed/?best-topics=tech&post_type=best "~Tech"
 
 https://news.ycombinator.com/showrss "hacker-news" "~Show HN"
 https://hnrss.org/frontpage "hacker-news" "~hnrss front page"
@@ -23,3 +24,7 @@ https://cheatsheetseries.owasp.org/News.xml "technology" "~OWASP Cheat Sheet Ser
 https://waitbutwhy.com/feed "blogs" "~Wait But Why"
 https://betterexplained.com/feed "blogs" "~Better Explained"
 https://fs.blog/feed "blogs" "~fs"
+
+https://rss.politico.com/politics-news.xml "~Politics"
+https://rss.politico.com/economy.xml "~Economy"
+https://rss.politico.com/congress.xml "~Congress"
