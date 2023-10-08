@@ -2,6 +2,7 @@
 
 themedir="$HOME/.config/hypr/themes"
 rice=$(ls $themedir | wofi -i --show dmenu) || exit
+[[ -d $themedir/$rice ]] || exit
 
 echo $rice > $HOME/.cache/rice
 
@@ -32,12 +33,20 @@ ln -f $HOME/.config/kitty/themes/${kittydir}/theme.conf $HOME/.config/kitty/them
 # lvim colors
 lvimthemeconf="$HOME/.config/lvim/lua/user/theme.lua"
 case $rice in
+    hyprdots)
+        theme="" ;;
     gruvbox)
         theme="gruvbox" ;;
     axenide)
         theme="gruvbox" ;;
     oglo)
-        theme="gruvbox" ;;
+        theme="bamboo" ;;
+    1amSimple)
+        theme="lunar" ;;
+    notwidow)
+        theme="catppuccin-frappe" ;;
+    RUNFUNRUN)
+        theme="kanagawa" ;;
     *)
         theme="tokyonight" ;;
 esac
@@ -45,6 +54,6 @@ echo "lvim.colorscheme = \"$theme\"" > $lvimthemeconf
 
 sleep 0.2
 
-sh $HOME/.config/system_scripts/pkill_bc
 sh $HOME/.config/system_scripts/toggle_waybar
 hyprctl reload
+sh $HOME/.config/system_scripts/pkill_bc

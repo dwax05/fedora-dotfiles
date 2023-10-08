@@ -24,7 +24,7 @@ BorderActivateAll=9
 Active=true
 DayTemperature=4500
 Mode=Constant
-NightTemperature=2200
+NightTemperature=2000
 TransitionTime=1
 
 [Plugins]

@@ -1,2 +1,5 @@
-[2023-10-03 07:58:05.298][verbose] Chromium sandbox is enabled
-[2023-10-03 07:58:05.299][info] Running version 2023.4
+[2023-10-08 18:43:27.971][verbose] Chromium sandbox is enabled
+[2023-10-08 18:43:27.971][info] Running version 2023.4
+[2023-10-08 18:43:28.055][info] Detected locale: en-US
+[2023-10-08 18:43:28.074][info] Connected to the daemon
+[2023-10-08 18:43:28.123][info] Autoconnect the tunnel

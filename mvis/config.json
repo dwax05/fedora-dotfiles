@@ -1,0 +1,9 @@
+{
+  "volume": 1.0,
+  "detail": 0.1,
+  "fps": 60,
+  "style": {
+    "fg": null,
+    "bg": null
+  }
+}

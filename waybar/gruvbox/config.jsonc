@@ -135,7 +135,7 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "<span foreground='#928374'></span> {:%a, %d %b  <span foreground='#928374'></span> %I:%M}"
+        "format": "<span foreground='#928374'></span> {:%d %b  <span foreground='#928374'></span> %I:%M}"
     },
     "cpu": {
         "format": "<span foreground='#928374'></span> {usage}%",

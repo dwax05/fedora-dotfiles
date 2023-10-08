@@ -41,13 +41,14 @@ done=PlasmaVolume_DisableKMixAutostart
 mtime=1694476800
 
 [dolphin_detailsmodesettings.upd]
-ctime=1695950397
-mtime=1688448822
+ctime=1696611673
+done=move-content-display
+mtime=1694440132
 
 [filepicker.upd]
-ctime=1695049773
+ctime=1696611669
 done=filepicker-remove-old-previews-entry
-mtime=1691239057
+mtime=1693726530
 
 [fonts_akregator.upd]
 ctime=1695950401
@@ -75,9 +76,9 @@ done=gtk_theme,dont_use_gtk_css_for_window_decorations,remove_deprecated_gtk4_op
 mtime=1694476800
 
 [gwenview.upd]
-ctime=1695950399
+ctime=1696611671
 done=SideBar_StatusBar_Rename,ImageView_AlphaBackgroundMode_Update,DeleteThumbnailSetting_Rename
-mtime=1688446686
+mtime=1694487968
 
 [icons_remove_effects.upd]
 ctime=1695950402
@@ -85,8 +86,8 @@ done=IconsRemoveEffects
 mtime=1694514763
 
 [kcalcrc.upd]
-ctime=1695950409
-mtime=1688448977
+ctime=1696611677
+mtime=1694248504
 
 [kcm_rename_plasma_desktop.upd]
 ctime=1695950400
@@ -104,9 +105,9 @@ done=kcminputrc_migrate_key_repeat
 mtime=1694476800
 
 [konsole.upd]
-ctime=1695950384
+ctime=1696611676
 done=konsole_globalaccel,add-hamburgermenu-to-toolbar
-mtime=1688449093
+mtime=1694488233
 
 [krunnerglobalshortcuts2.upd]
 ctime=1695739397
@@ -149,9 +150,9 @@ done=split-variants
 mtime=1694476800
 
 [okular.upd]
-ctime=1695950405
+ctime=1696611676
 done=annotation-toolbar,builtin-annotations
-mtime=1688446807
+mtime=1694488006
 
 [plasmashell-5.27-use-panel-thickness-in-default-group.upd]
 ctime=1695739397
@@ -159,23 +160,23 @@ done=plasmashell-5.27-use-panel-thickness-in-default-group
 mtime=1694514764
 
 [spectacle_clipboard.upd]
-ctime=1695950408
+ctime=1696611676
 done=clipboard-settings-change
-mtime=1688446826
+mtime=1694248417
 
 [spectacle_newConfig.upd]
-ctime=1695950408
-mtime=1688446826
+ctime=1696611676
+mtime=1694248417
 
 [spectacle_rememberregion.upd]
-ctime=1695950408
+ctime=1696611676
 done=spectacle-migrate-rememberregion
-mtime=1688446826
+mtime=1694248417
 
 [spectacle_shortcuts.upd]
-ctime=1695950408
+ctime=1696611676
 done=spectacle-migrate-shortcuts
-mtime=1688446826
+mtime=1694248417
 
 [style_widgetstyle_default_breeze.upd]
 ctime=1695950402
@@ -183,6 +184,6 @@ done=StyleWidgetStyleDefaultBreeze
 mtime=1694514764
 
 [webengineurlinterceptoradblock.upd]
-ctime=1695950395
+ctime=1696611674
 done=webengineurlinterceptoradblock_move_settings
-mtime=1688447756
+mtime=1694402001

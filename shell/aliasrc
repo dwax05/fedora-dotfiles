@@ -42,6 +42,9 @@ greet(){
     # colorscript -r
     pokemon-colorscripts -r --no-title
     # cowsay "$(fortune)"
+
+    # echo "\033[92m--------------------------------------------\033[0m"
+
     todos=$(cat "$HOME/vimwiki/todo.norg" \
         | grep "(-)\|( )" \
         | grep -o '[[:alpha:]].*' \
@@ -92,6 +95,10 @@ alias \
 
 alias \
     gitc="git clone"
+
+# fzf stuff
+alias \
+    pf='fzf --preview="bat -n --color=always {}"'
 
 alias \
     ll="eza -l --group-directories-first" \
