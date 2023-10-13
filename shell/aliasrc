@@ -38,10 +38,25 @@ e() {
     [[ -n $file ]] && $EDITOR $file
 }
 
+randcolor(){
+    case $(echo "1\n2\n3" | shuf -n1) in
+        1)
+            colorscript -r
+            ;;
+        2)
+            pokemon-colorscripts -r --no-title
+            ;;
+        3)
+            cowsay "$(fortune)"
+            ;;
+    esac
+}
+
 greet(){
     # colorscript -r
     pokemon-colorscripts -r --no-title
     # cowsay "$(fortune)"
+    # randcolor
 
     # echo "\033[92m--------------------------------------------\033[0m"
 

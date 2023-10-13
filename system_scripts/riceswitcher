@@ -13,44 +13,54 @@ wallpaperdir="normal"
 [[ -d $HOME/.local/wallpapers/$rice ]] && wallpaperdir=$rice
 
 ## map different rices to different wallpaper directories
-[[ $rice == "1amSimple" ]] && wallpaperdir="oglo"
+[[ $rice == "1amSimple" ]] && 
 
 echo $wallpaperdir > $HOME/.cache/wallpaperdir
-
-# hyprland
-ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
 
 # starship
 starshipdir="oglo"
 [[ -d $HOME/.config/starship/themes/$rice ]] && starshipdir=$rice
-ln -f $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
 
 # kitty
 kittydir="default"
 [[ -d $HOME/.config/kitty/themes/$rice ]] && kittydir=$rice
-ln -f $HOME/.config/kitty/themes/${kittydir}/theme.conf $HOME/.config/kitty/theme.conf
 
 # lvim colors
 lvimthemeconf="$HOME/.config/lvim/lua/user/theme.lua"
 case $rice in
-    hyprdots)
-        theme="" ;;
     gruvbox)
-        theme="gruvbox" ;;
+        lvimtheme="gruvbox"
+        ;;
     axenide)
-        theme="gruvbox" ;;
+        lvimtheme="gruvbox"
+        ;;
     oglo)
-        theme="bamboo" ;;
+        lvimtheme="bamboo"
+        ;;
     1amSimple)
-        theme="lunar" ;;
+        lvimtheme="lunar" 
+        wallpaperdir="oglo"
+        ;;
     notwidow)
-        theme="catppuccin-frappe" ;;
+        lvimtheme="catppuccin-frappe"
+        ;;
     RUNFUNRUN)
-        theme="kanagawa" ;;
+        lvimtheme="kanagawa"
+        ;;
+    Sakura)
+        lvimtheme="catppuccin-mocha"
+        ;;
     *)
-        theme="tokyonight" ;;
+        lvimtheme="tokyonight"
+        ;;
 esac
-echo "lvim.colorscheme = \"$theme\"" > $lvimthemeconf 
+
+# apply
+echo "lvim.colorscheme = \"$lvimtheme\"" > $lvimthemeconf 
+ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
+ln -f $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
+ln -f $HOME/.config/kitty/themes/${kittydir}/theme.conf $HOME/.config/kitty/theme.conf
+
 
 sleep 0.2
 

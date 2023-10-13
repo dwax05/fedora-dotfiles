@@ -94,7 +94,7 @@ when = "true"
 shell = ["bash", "--noprofile", "--norc"]
 
 [custom.vpn-icon]
-disabled = false
+disabled = true
 command = "corplink-pilot status"
 style = "bold green"
 format = "[$symbol($output)]($style)"

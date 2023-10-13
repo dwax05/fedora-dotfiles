@@ -1,1 +1,1 @@
-lvim.colorscheme = "gruvbox"
+lvim.colorscheme = "bamboo"

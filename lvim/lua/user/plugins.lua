@@ -21,6 +21,7 @@ lvim.plugins = {
     { "nvim-tree/nvim-web-devicons" },
     { "lewis6991/gitsigns.nvim" },
     { "romgrk/barbar.nvim" },
+    { "rafi/awesome-vim-colorschemes" },
     { "simrat39/rust-tools.nvim" },
     { "neovim/nvim-lspconfig" },
     {

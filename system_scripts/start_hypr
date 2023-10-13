@@ -1,5 +1,4 @@
 #!/bin/sh
-# WIP
 
 rice=$(cat $HOME/.cache/rice)
 
