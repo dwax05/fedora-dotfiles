@@ -20,13 +20,32 @@ share() {
     echo $link
 }
 
+ltxtmplts="$HOME/tmplts/ltx"
+newltx() {
+    mkdir -p "$@"
+    cd "$1"
+    cp $ltxtmplts/letterfonts.tex $ltxtmplts/macros.tex $ltxtmplts/preamble.tex $ltxtmplts/template.tex .
+}
+
 mkcd() {
-    mkdir -p "$1"
+    mkdir -p "$@"
     cd "$1"
 }
 
-goto() {
-    cd $1 || zoxide $1
+fcd(){
+    cd "$(find -type d | fzf)"
+}
+
+ctex(){
+    mv *.{aux,fdb_latexmk,fls,log,gz} logs 
+}
+
+getpath(){
+    find -type f | fzf | sed 's/^..//g' | tr -d '\n' | wl-copy
+}
+
+open(){
+    xdg-open "$(find -type f | fzf)"
 }
 
 e() {
@@ -54,7 +73,7 @@ randcolor(){
 
 greet(){
     # colorscript -r
-    pokemon-colorscripts -r --no-title
+    # pokemon-colorscripts -r --no-title
     # cowsay "$(fortune)"
     # randcolor
 

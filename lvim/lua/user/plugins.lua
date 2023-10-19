@@ -24,6 +24,8 @@ lvim.plugins = {
     { "rafi/awesome-vim-colorschemes" },
     { "simrat39/rust-tools.nvim" },
     { "neovim/nvim-lspconfig" },
+    { "lervag/vimtex" },
+    { "yuratomo/w3m.vim" },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",

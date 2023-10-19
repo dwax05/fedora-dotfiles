@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ -z $1 ]; then
+    echo "invalid usage"
+    exit
+else
+    walldir="$HOME/.local/wallpapers/$1"
+fi
+
+if [ -d $walldir ]; then
+    ln -f $walldir/$(ls $walldir | shuf -n1) $HOME/.cache/kittywallpaper.png
+else
+    echo "directory does not exist"
+    exit
+fi
+
+kitty -c $HOME/.config/kitty/wall.conf

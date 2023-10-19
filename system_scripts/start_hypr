@@ -1,7 +1,5 @@
 #!/bin/sh
 
-rice=$(cat $HOME/.cache/rice)
-
 # auto starting apps
 wlr-randr --output eDP-1 --scale 1.75 
 killall -q spotifyd powerdevil plasma-workspace swaync swayidle swww dunst swww-daemon waybar swaync nm-applet swayidle blueman-applet xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland xdg-desktop-portal-kde
@@ -18,3 +16,4 @@ sh ~/.config/system_scripts/background-changer &
 nm-applet --indicator &
 blueman-applet &
 swayidle -w timeout 10 ./wayland_session_lock &
+emacs --daemon &

@@ -1,5 +1,6 @@
 
 lvim.builtin.which_key.mappings["l"]["R"] = { "<cmd>LspRestart<cr>", "Restart" }
+-- lvim.builtin.which_key.mappings["l"]["c"] = { "<cmd>! pdflatex %<cr><cr>", "Compile LaTeX Document" }
 
 lvim.builtin.which_key.mappings["n"] = {
     name = "Neorg",
@@ -34,4 +35,19 @@ lvim.builtin.which_key.mappings["b"] = {
     w = { "<Cmd>BufferOrderByWindowNumber<CR>", "Order Buffers by Window Number" },
 }
 
+lvim.builtin.which_key.mappings["v"] = {
+    name = "VimTeX",
+    c = { "<cmd>VimtexCompile<cr>", "Compile and open LaTeX File" },
+    o = { "<cmd>!xdg-open <C-r>=expand('%:r')<cr>.pdf &<cr>", "Open LaTeX File" },
+}
+
 lvim.builtin.which_key.mappings["x"] = { "<cmd>!chmod +x %<cr>", "Make Executable" }
+
+lvim.builtin.which_key.mappings["w"] = {
+    name = "Web Search",
+    w = { "<cmd>w<cr>", "Save file" },
+    s = { ":W3m ", "Search w3m" },
+    n = { ":W3mTab ", "Search w3m in new tab" },
+    h = { ":W3mSplit ", "Horizontal Split" },
+    v = { ":W3mVSplit ", "Vertical Split" },
+}

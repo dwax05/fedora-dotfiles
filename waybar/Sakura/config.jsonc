@@ -87,7 +87,7 @@
     "custom/wallpaper":{
         "format":" ",
         "on-click": "bash ~/.config/system_scripts/pkill_bc",
-        "on-click-right": "sh ~/.config/system_scripts/riceswitcher",
+        "on-click-right": "echo nsfw > $HOME/.cache/wallpaperdir",
         "tooltip": false,
     },
     "battery": {

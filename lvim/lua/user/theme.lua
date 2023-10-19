@@ -1,1 +1,1 @@
-lvim.colorscheme = "bamboo"
+lvim.colorscheme = "catppuccin-mocha"

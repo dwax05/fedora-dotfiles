@@ -2,4 +2,3 @@
 
 bindkey -s '^e' 'e\n'
 bindkey -s '^w' 'e .config\n'
-bindkey -s '^a' 'tm\n'

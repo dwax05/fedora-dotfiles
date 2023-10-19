@@ -1,6 +1,5 @@
-[2023-10-13 09:39:35.564][verbose] Chromium sandbox is enabled
-[2023-10-13 09:39:35.565][info] Running version 2023.4
-[2023-10-13 09:39:35.654][info] Detected locale: en-US
-[2023-10-13 09:39:35.680][info] Connected to the daemon
-[2023-10-13 09:39:35.726][info] Autoconnect the tunnel
-[2023-10-13 10:39:35.690][verbose] GRPC Channel connectivity state changed to 2
+[2023-10-18 09:36:20.090][verbose] Chromium sandbox is enabled
+[2023-10-18 09:36:20.090][info] Running version 2023.5
+[2023-10-18 09:36:20.172][info] Detected locale: en-US
+[2023-10-18 09:36:20.193][info] Connected to the daemon
+[2023-10-18 09:36:20.242][info] Autoconnect the tunnel

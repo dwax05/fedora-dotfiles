@@ -15,8 +15,6 @@ wallpaperdir="normal"
 ## map different rices to different wallpaper directories
 [[ $rice == "1amSimple" ]] && 
 
-echo $wallpaperdir > $HOME/.cache/wallpaperdir
-
 # starship
 starshipdir="oglo"
 [[ -d $HOME/.config/starship/themes/$rice ]] && starshipdir=$rice
@@ -50,6 +48,9 @@ case $rice in
     Sakura)
         lvimtheme="catppuccin-mocha"
         ;;
+    everforest)
+        lvimtheme="everforest"
+        ;;
     *)
         lvimtheme="tokyonight"
         ;;
@@ -57,13 +58,14 @@ esac
 
 # apply
 echo "lvim.colorscheme = \"$lvimtheme\"" > $lvimthemeconf 
+echo $wallpaperdir > $HOME/.cache/wallpaperdir
 ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
 ln -f $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
 ln -f $HOME/.config/kitty/themes/${kittydir}/theme.conf $HOME/.config/kitty/theme.conf
-
 
 sleep 0.2
 
 sh $HOME/.config/system_scripts/toggle_waybar
 hyprctl reload
 sh $HOME/.config/system_scripts/pkill_bc
+wal -i $HOME/.cache/wallpaper.png
