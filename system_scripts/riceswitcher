@@ -23,6 +23,9 @@ starshipdir="oglo"
 kittydir="default"
 [[ -d $HOME/.config/kitty/themes/$rice ]] && kittydir=$rice
 
+wofidir="default"
+[[ -d $HOME/.config/wofi/themes/$rice ]] && wofidir=$rice
+
 # lvim colors
 lvimthemeconf="$HOME/.config/lvim/lua/user/theme.lua"
 case $rice in
@@ -34,6 +37,7 @@ case $rice in
         ;;
     oglo)
         lvimtheme="bamboo"
+        # kittydir="gruvbox"
         ;;
     1amSimple)
         lvimtheme="lunar" 
@@ -50,6 +54,7 @@ case $rice in
         ;;
     everforest)
         lvimtheme="everforest"
+        wofidir="oglo"
         ;;
     *)
         lvimtheme="tokyonight"
@@ -63,9 +68,10 @@ ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
 ln -f $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
 ln -f $HOME/.config/kitty/themes/${kittydir}/theme.conf $HOME/.config/kitty/theme.conf
 
+ln -f $HOME/.config/wofi/themes/${wofidir}/style.css $HOME/.config/wofi
+
 sleep 0.2
 
 sh $HOME/.config/system_scripts/toggle_waybar
 hyprctl reload
 sh $HOME/.config/system_scripts/pkill_bc
-wal -i $HOME/.cache/wallpaper.png

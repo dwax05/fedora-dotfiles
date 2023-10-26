@@ -9,12 +9,12 @@ for command in yum mount umount sv dnf updatedb su shutdown poweroff reboot ; do
 done; unset command
 
 se() {
-	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf --preview='bat -n --color=always ~/.local/bin/{}')"
+	choice="$(find $HOME/.local/bin -mindepth 1 -printf '%P\n' | fzf --preview='bat -n --color=always ~/.local/bin/{}')"
 	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
 }
 
 share() {
-	choice="$(du -a .local/bin .config | awk '{print $2}' | fzf )"
+	choice="$(du -a $HOME/.local/bin | awk '{print $2}' | fzf )"
     [ -f "$choice" ] && link=$(curl -sF "file=@$choice" https://0x0.st)
     wl-copy $link
     echo $link
@@ -24,7 +24,11 @@ ltxtmplts="$HOME/tmplts/ltx"
 newltx() {
     mkdir -p "$@"
     cd "$1"
-    cp $ltxtmplts/letterfonts.tex $ltxtmplts/macros.tex $ltxtmplts/preamble.tex $ltxtmplts/template.tex .
+    cp $ltxtmplts/preamble.tex $ltxtmplts/template.tex .
+}
+
+wgitc() {
+    git clone git@waxonwaxoff.xyz:~/$1
 }
 
 mkcd() {
@@ -115,6 +119,8 @@ alias \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
     cat="bat -p" \
+    man="batman" \
+    less="batpipe"
 
 # These common commands are just too long! Abbreviate them.
 alias \
@@ -128,7 +134,7 @@ alias \
     tm="tmux attach || tmux new-session" \
 
 alias \
-    gitc="git clone"
+    gitc="git clone" \
 
 # fzf stuff
 alias \

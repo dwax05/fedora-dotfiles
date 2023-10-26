@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rsync -a ~/pub/* root@waxonwaxoff.xyz:/var/www/data

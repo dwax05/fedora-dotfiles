@@ -10,8 +10,8 @@
     "position": "top",
     // "output": "!DP-2",
     // "output": ["DP-1", "DP-2"],
-    // "gtk-layer-shell": "false",
-    // "height": 50,  // to be removed for auto
+    "gtk-layer-shell": "false",
+    "height": 30,  // to be removed for auto
     // "width": 2560,  // to be removed for auto
     "spacing": 0,
     "margin-top": 0,
@@ -25,12 +25,12 @@
     // =============================================
     "modules-left": [
         "custom/launcher",
-        "hyprland/workspaces",
         "cpu",
         "custom/temp",
         "memory",
         "disk",
-        "custom/system-updates"
+        "hyprland/workspaces",
+        "custom/system-updates",
     ],
 
     "custom/launcher": {
@@ -110,19 +110,19 @@
     //                    CENTER                    
     // =============================================
     "modules-center": [
-        "custom/spotify-metadata"
+        "custom/spotify-metadata",
+        "hyprland/window",
     ],
 
-    // "hyprland/window",
 
 
     // Currently problems when no window selected, background still there
     // https://github.com/Alexays/Waybar/issues/1934
-    // "hyprland/window": {
-    //     "format": "{}",
-    //     "separate-outputs": true,
-    //     "max-length": 35
-    // },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 35
+    },
     "custom/spotify-metadata": {
         "format": "<span size='large' rise='-1pt'></span>  <span color='#f5e0dc'>{}</span>",
         "max-length": 60,
@@ -140,7 +140,7 @@
     //                  RIGHT SIDE                  
     // =============================================
     "modules-right": [
-        "network",
+        // "network",
         "tray",
         "custom/wallpaper",
         "pulseaudio",
@@ -202,7 +202,7 @@
         "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
     },
     "clock": {
-        "format": "<span size='large' rise='-1pt'>󰦖 </span><span color='#f5e0dc'>{:%H:%M} </span>",
+        "format": "<span size='large' rise='-1pt'>󰦖 </span><span color='#f5e0dc'>{:%I:%M} </span>",
         "format-alt": "󰸘 <span color='#f5e0dc'>{:%A, %d. %B %Y} </span>",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
@@ -229,9 +229,8 @@
         },
     },
     "battery": {
-        "format": "<span  rise='0pt'>{icon} </span><span color='#f5e0dc'> {time}</span>",
-        "format-icons": ["", "", "", "", "", "", "", ""],
-        "format-time": "{H}h{M}m",
+        "format": "{icon} {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
         "format-charging": "<span  color='#9ece6a' rise='0pt'> {icon} </span><span color='#f5e0dc'> {capacity}%</span>",
         "format-full": "<span  color='#9ece6a' rise='0pt'></span>",
         "interval": 30,
@@ -240,8 +239,7 @@
             "critical": 15
         },
         "tooltip": true,
-        "tooltip-format": "󰂑 ⌜{capacity}%⌟ 󱄇 ⌜{power} W⌟",
-        "on-click": ""
+        "tooltip-format": "󰂑 ⌜{capacity}%⌟",
     },
     "custom/power": {
         "format": "<span rise='5pt'>⏻</span>",

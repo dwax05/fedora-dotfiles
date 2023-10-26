@@ -16,4 +16,5 @@ sh ~/.config/system_scripts/background-changer &
 nm-applet --indicator &
 blueman-applet &
 swayidle -w timeout 10 ./wayland_session_lock &
-emacs --daemon &
+spotifyd
+wal -R
