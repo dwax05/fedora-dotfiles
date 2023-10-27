@@ -47,6 +47,7 @@ lvim.plugins = {
             }
         end,
     },
+
     -- { "Alexis12119/nightly.nvim" },
     -- { "kovetskiy/sxhkd-vim" },
 }

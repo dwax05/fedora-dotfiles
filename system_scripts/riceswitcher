@@ -28,6 +28,7 @@ wofidir="default"
 
 # lvim colors
 lvimthemeconf="$HOME/.config/lvim/lua/user/theme.lua"
+lvimtheme="tokyonight"
 case $rice in
     gruvbox)
         lvimtheme="gruvbox"
@@ -56,6 +57,9 @@ case $rice in
         lvimtheme="everforest"
         wofidir="oglo"
         ;;
+    XNM1)
+        wofidir="oglo"
+        ;;
     *)
         lvimtheme="tokyonight"
         ;;
@@ -64,11 +68,11 @@ esac
 # apply
 echo "lvim.colorscheme = \"$lvimtheme\"" > $lvimthemeconf 
 echo $wallpaperdir > $HOME/.cache/wallpaperdir
-ln -f $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
-ln -f $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
-ln -f $HOME/.config/kitty/themes/${kittydir}/theme.conf $HOME/.config/kitty/theme.conf
+ln -sf $HOME/.config/hypr/themes/${rice}/theme.conf $HOME/.config/hypr/theme.conf
+ln -sf $HOME/.config/starship/themes/${starshipdir}/starship.toml $HOME/.config/starship/starship.toml
+ln -sf $HOME/.config/kitty/themes/${kittydir}/theme.conf $HOME/.config/kitty/theme.conf
 
-ln -f $HOME/.config/wofi/themes/${wofidir}/style.css $HOME/.config/wofi
+ln -sf $HOME/.config/wofi/themes/${wofidir}/style.css $HOME/.config/wofi
 
 sleep 0.2
 

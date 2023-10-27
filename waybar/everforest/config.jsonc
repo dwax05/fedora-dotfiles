@@ -52,14 +52,14 @@
             "7": "VII",
             "8": "VIII",
             "9": "IX",
-            "10": "X"
+            "10": "X",
         },
         "on-click": "activate",
         "sort-by-number": true,
-        "active-only": true
+        // "active-only": true,
     },
     "hyprland/window": {
-        "max-length": 150
+        "max-length": 50
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"

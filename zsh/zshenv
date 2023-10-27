@@ -7,8 +7,11 @@ HIST_STAMPS="dd/mm/yyyy"
 HISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/zsh/history"
 LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/less/history"
 
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+
+shadafile="$HOME/.config/vim/viminfo"
+
 MANPAGER="batman"
-TERM="xterm-256color"
 
 BUN_INSTALL="$HOME/.local/share/bun"
 [ -d "$BUN_INSTALL/bin" ] && export PATH="$PATH:$BUN_INSTALL/bin"
@@ -20,11 +23,6 @@ BUN_INSTALL="$HOME/.local/share/bun"
 
 # bun completions
 [ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots) # lets you tab complete hidden files by default
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bindsrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bindsrc"

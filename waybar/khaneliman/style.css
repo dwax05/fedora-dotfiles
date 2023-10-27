@@ -143,6 +143,7 @@ window.DP-3 #workspaces {
 
 #custom-notification,
 #custom-updates,
+#clock,
 #custom-github,
 #custom-weather,
 #idle_inhibitor,
@@ -172,6 +173,10 @@ window.DP-3 #workspaces {
 
 #user {
   color: @blue;
+}
+
+#clock {
+    color: @lavender;
 }
 
 #custom-pipewire {

@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Define a function to list Tmux sessions
+list_tmux_sessions() {
+    tmux list-sessions -F "#{session_name}"
+}
+
+# Find the lowest available number for the session name
+session=0
+while [[ $(list_tmux_sessions | grep -c "^$session$") -ne 0 ]]; do
+    ((session++))
+done
+
+# Check if there are any Tmux sessions
+if [ -z "$(list_tmux_sessions)" ]; then
+    # If no sessions are active, create a new session
+    tmux new-session -d -s "$session"
+elif [ "$(list_tmux_sessions | wc -l)" -eq 1 ]; then
+    # If there's only one active session, automatically attach to it
+    session="$(list_tmux_sessions)"
+    tmux attach-session -t "$session"
+else
+    # If multiple sessions are active, use `wofi` to select a session
+    selected_session="$(list_tmux_sessions | wofi --dmenu -i -p "Select a Tmux session:")"
+
+    # Check if the user canceled session selection
+    if [ -z "$selected_session" ]; then
+        exit 0
+    else
+        session="$selected_session"
+        tmux attach-session -t "$session"
+    fi
+fi
+
+# Run the provided command in the new window, if one is provided
+if [ -n "$1" ]; then
+    kitty tmux new-session -A -s "$session" -d "$1"
+else
+    # Launch Kitty with the selected Tmux session
+    kitty tmux new-session -A -s "$session"
+fi

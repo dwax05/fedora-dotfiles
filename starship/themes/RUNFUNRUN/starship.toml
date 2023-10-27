@@ -3,6 +3,7 @@
 disabled = true
 
 [battery]
+disabled = true
 full_symbol = " "
 charging_symbol = " "
 discharging_symbol = " "
@@ -17,13 +18,15 @@ success_symbol = "[➜](bold green)"
 error_symbol = "[✖](bold red)"
 
 [cmd_duration]
+disabled = true
 min_time = 0  # Show command duration always
 format = "took [$duration]($style) "
 show_milliseconds = true
 
 [directory]
 truncation_length = 5
-format = "[](bold 214)[$path]($style)[$lock_symbol]($lock_style) "
+format = "(bold 214)[$path]($style)[$lock_symbol]($lock_style) "
+# format = "[](bold 214)[$path]($style)[$lock_symbol]($lock_style) "
 style = "bold 214"
 
 [git_branch]
@@ -39,7 +42,8 @@ style = "bold white"
 style_user = "bold blue"
 style_root = "bold red"
 show_always = true
-format = "[$user]($style)[](white)"
+# format = "[$user]($style)[](white)"
+format = "[$user]($style)[@](white)"
 
 [hostname]
 ssh_only = false
@@ -52,7 +56,7 @@ disabled = false
 format = "$symbol[${ram}( | ${swap})]($style) "
 threshold = 70
 style = "bold dimmed white"
-disabled = false
+disabled = true
 
 [package]
 disabled = true

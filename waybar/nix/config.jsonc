@@ -4,19 +4,17 @@
     "modules-left": [
         "custom/launcher",
         "hyprland/workspaces",
-        "custom/cava-internal",
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
+        "tray",
         "pulseaudio",
-        "backlight",
         "memory",
         "cpu",
         "network",
         "custom/powermenu",
-        "tray"
     ],
     "hyprland/workspaces": {
         "sort-by-number": true,

@@ -52,6 +52,10 @@ open(){
     xdg-open "$(find -type f | fzf)"
 }
 
+savewall(){
+    cp "$(cat $HOME/.cache/wallpaper)" "$HOME/.local/wallpapers/saved"
+}
+
 e() {
     if [[ -n $1 ]]; then 
         file=$(fd --type file . $1 | fzf --preview="bat -n --color=always {}")

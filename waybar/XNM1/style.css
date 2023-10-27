@@ -1,7 +1,8 @@
 @import "macchiato.css";
 
 * {
-  border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    border: none;
 }
 
 window.bottom_bar#waybar {
