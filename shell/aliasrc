@@ -87,11 +87,11 @@ greet(){
 
     # echo "\033[92m--------------------------------------------\033[0m"
 
-    todos=$(cat "$HOME/vimwiki/todo.norg" \
+    todos="$(cat "$HOME/vimwiki/todo.norg" \
         | grep "(-)\|( )" \
         | grep -o '[[:alpha:]].*' \
         | sed 's/^/- /' \
-        | sed "s/{[^}]*}//g")
+        | sed "s/{[^}]*}//g")"
 
     case $(cat $HOME/.cache/rice) in
         gruvbox)

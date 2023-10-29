@@ -3,7 +3,7 @@ setopt autocd
 stty stop undef
 setopt interactive_comments
 
-set -o vi
+# set -o vi
 
 autoload -U compinit
 zstyle ':completion:*' menu select

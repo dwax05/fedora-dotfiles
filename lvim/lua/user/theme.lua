@@ -1,1 +1,1 @@
-lvim.colorscheme = "catppuccin-frappe"
+lvim.colorscheme = "tokyonight"
