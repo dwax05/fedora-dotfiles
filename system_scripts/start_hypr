@@ -18,3 +18,4 @@ blueman-applet &
 swayidle -w timeout 10 ./wayland_session_lock &
 spotifyd
 wal -R
+

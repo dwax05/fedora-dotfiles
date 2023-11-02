@@ -2788,6 +2788,18 @@
   <resource identifier="Noto Serif Ultra-Light Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="ntxsups" checksum="(null)">
+  </resource>
+
+  <resource identifier="ntxsups Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="ntxsups Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="ntxsups Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="Open Sans" checksum="(null)">
   </resource>
 
@@ -2966,6 +2978,141 @@
   </resource>
 
   <resource identifier="Symbols Nerd Font Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Chorus Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Bold Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre PagellaX" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre PagellaX" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre PagellaX Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre PagellaX Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre PagellaX Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre PagellaX Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre TermesX" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre TermesX" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre TermesX Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre TermesX Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre TermesX Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre TermesX Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Torus" checksum="(null)">

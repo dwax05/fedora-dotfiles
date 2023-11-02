@@ -124,7 +124,6 @@ alias \
 	ccat="highlight --out-format=ansi" \
     cat="bat -p" \
     man="batman" \
-    less="batpipe"
 
 # These common commands are just too long! Abbreviate them.
 alias \

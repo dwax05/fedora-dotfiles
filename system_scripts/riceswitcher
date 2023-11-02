@@ -1,7 +1,7 @@
 #!/bin/sh
 
 themedir="$HOME/.config/hypr/themes"
-rice=$(ls $themedir | wofi -i --show dmenu) || exit
+rice=$(ls $themedir | wofi -i -d) || exit
 [[ -d $themedir/$rice ]] || exit
 
 echo $rice > $HOME/.cache/rice
@@ -12,11 +12,8 @@ killall waybar toggle_waybar
 wallpaperdir="normal"
 [[ -d $HOME/.local/wallpapers/$rice ]] && wallpaperdir=$rice
 
-## map different rices to different wallpaper directories
-[[ $rice == "1amSimple" ]] && 
-
 # starship
-starshipdir="oglo"
+starshipdir="default"
 [[ -d $HOME/.config/starship/themes/$rice ]] && starshipdir=$rice
 
 # kitty
@@ -31,14 +28,14 @@ lvimthemeconf="$HOME/.config/lvim/lua/user/theme.lua"
 lvimtheme="tokyonight"
 case $rice in
     gruvbox)
-        lvimtheme="gruvbox"
+        lvimtheme="gruvbox-material"
         ;;
     axenide)
-        lvimtheme="gruvbox"
+        lvimtheme="gruvbox-material"
         ;;
     oglo)
         lvimtheme="bamboo"
-        # kittydir="gruvbox"
+        # kittydir="gruvbox-material"
         ;;
     1amSimple)
         lvimtheme="lunar" 
@@ -52,6 +49,7 @@ case $rice in
         ;;
     Sakura)
         lvimtheme="catppuccin-mocha"
+        wallpaperdir="one-piece"
         ;;
     everforest)
         lvimtheme="everforest"

@@ -12,7 +12,6 @@
  /* Window */
  window {
     margin: 0px;
-    /* padding: 10px; */
     border: 3px solid @accent;
     border-radius: 7px;
     background-color: @bg;

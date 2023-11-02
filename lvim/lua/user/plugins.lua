@@ -2,6 +2,7 @@ lvim.builtin.nvimtree.active = false
 
 lvim.plugins = {
     { "projekt0n/caret.nvim" },
+    { "sainnhe/gruvbox-material" },
     { "udalov/kotlin-vim" },
     { "MunifTanjim/nui.nvim" },
     { "ThePrimeagen/harpoon" },
@@ -26,6 +27,10 @@ lvim.plugins = {
     { "neovim/nvim-lspconfig" },
     { "lervag/vimtex" },
     { "yuratomo/w3m.vim" },
+    {
+        "nvim-telescope/telescope-file-browser.nvim",
+        dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",
