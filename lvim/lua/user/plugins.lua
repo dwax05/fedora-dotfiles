@@ -27,6 +27,7 @@ lvim.plugins = {
     { "neovim/nvim-lspconfig" },
     { "lervag/vimtex" },
     { "yuratomo/w3m.vim" },
+    { "luckasRanarison/tree-sitter-hypr" },
     {
         "nvim-telescope/telescope-file-browser.nvim",
         dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }

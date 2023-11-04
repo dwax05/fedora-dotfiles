@@ -114,6 +114,7 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
     rm="rm -vI" \
+    less="less -r" \
 	mkd="mkdir -pv" \
 
 # Colorize commands when possible.
@@ -149,3 +150,7 @@ alias \
     lla="eza -la --group-directories-first" \
     lt="eza -lT --group-directories-first" \
     lta="eza -lTa --group-directories-first" \
+
+# yt-dlp easy things
+alias \
+    yt-dlp-mp4="yt-dlp -S res,ext:mp4:m4a"

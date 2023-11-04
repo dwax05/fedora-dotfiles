@@ -28,6 +28,7 @@ NightTemperature=2000
 TransitionTime=1
 
 [Plugins]
+bismuthEnabled=true
 poloniumEnabled=true
 
 [Script-bismuth]
