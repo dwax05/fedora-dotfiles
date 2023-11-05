@@ -16,7 +16,8 @@ elif [ "$(list_tmux_sessions | wc -l)" -eq 1 ]; then
     tmux attach-session -t "$session"
 else
     # If multiple sessions are active, use `wofi` to select a session
-    selected_session="$(list_tmux_sessions | wofi --dmenu -i -p "Select a Tmux session:")"
+    # selected_session="$(list_tmux_sessions | wofi --dmenu -i -p "Select a Tmux session:")"
+    selected_session="$(list_tmux_sessions | tofi --prompt-text="Session:")"
 
     # Check if the user canceled session selection
     if [ -z "$selected_session" ]; then

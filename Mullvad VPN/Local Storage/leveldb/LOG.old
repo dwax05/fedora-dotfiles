@@ -1,3 +1,3 @@
-2023/11/03-14:22:57.508 4dde8 Reusing MANIFEST /home/dylanwax/.config/Mullvad VPN/Local Storage/leveldb/MANIFEST-000001
-2023/11/03-14:22:57.509 4dde8 Recovering log #3
-2023/11/03-14:22:57.509 4dde8 Reusing old log /home/dylanwax/.config/Mullvad VPN/Local Storage/leveldb/000003.log 
+2023/11/05-10:27:36.600 47116 Reusing MANIFEST /home/dylanwax/.config/Mullvad VPN/Local Storage/leveldb/MANIFEST-000001
+2023/11/05-10:27:36.600 47116 Recovering log #3
+2023/11/05-10:27:36.600 47116 Reusing old log /home/dylanwax/.config/Mullvad VPN/Local Storage/leveldb/000003.log 

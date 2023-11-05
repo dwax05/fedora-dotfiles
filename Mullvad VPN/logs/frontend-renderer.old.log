@@ -1,5 +1,0 @@
-[2023-11-03 14:22:57.924][verbose] Tunnel state: connected
-[2023-11-03 14:22:57.925][verbose] Initial: Wrong content height: 593, expected 568
-[2023-11-03 14:23:02.427][verbose] Tunnel state: disconnecting
-[2023-11-03 14:23:02.490][verbose] Tunnel state: disconnecting
-[2023-11-03 14:23:02.513][verbose] Tunnel state: disconnected

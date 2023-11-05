@@ -1,7 +1,9 @@
 #!/bin/sh
 
 themedir="$HOME/.config/hypr/themes"
-rice=$(ls $themedir | wofi -i -d) || exit
+# rice=$(ls $themedir | wofi -i -d) || exit
+# rice=$(ls $themedir | rofi -dmenu -i) || exit
+rice=$(ls $themedir | tofi --prompt-text="rice: ") || exit
 [[ -d $themedir/$rice ]] || exit
 
 echo $rice > $HOME/.cache/rice
@@ -35,7 +37,7 @@ case $rice in
         ;;
     oglo)
         lvimtheme="bamboo"
-        # kittydir="gruvbox-material"
+        wallpaperdir="one-piece"
         ;;
     1amSimple)
         lvimtheme="lunar" 

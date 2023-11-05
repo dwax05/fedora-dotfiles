@@ -1,49 +1,22 @@
 [$Version]
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered,bismuth_new_logger.upd:bismuth-new-logger
 
-[Compositing]
-LatencyPolicy=Medium
-
 [Desktops]
 Id_1=11ebc5fb-870a-4bb8-a9de-2d65f9e08e7b
-Id_2=f0a75fe9-d25f-4f27-81da-f113f3eb3993
-Id_3=d6342eca-fd70-4a82-aeeb-b568dd33324e
-Id_4=facdca50-ee2c-4654-9c13-8099867bb9b9
-Id_5=b52bf4ae-f37f-4261-98d6-22fb61f13783
-Id_6=31d18fb7-5928-4e68-affd-dcb5ec689263
 Name_1=www
-Name_2=dev
-Name_3=school
-Number=6
+Number=1
 Rows=1
-
-[Effect-windowview]
-BorderActivateAll=9
 
 [NightColor]
 Active=true
 DayTemperature=4500
-Mode=Constant
+Mode=Times
 NightTemperature=2000
 TransitionTime=1
 
 [Plugins]
-bismuthEnabled=true
-poloniumEnabled=true
-
-[Script-bismuth]
-enableMonocleLayout=false
-enableSpiralLayout=false
-enableSpreadLayout=false
-enableStairLayout=false
-enableThreeColumnLayout=false
-enableTileLayout=false
-keepFloatAbove=false
-layoutPerActivity=false
-layoutPerDesktop=false
-newWindowAsMaster=true
-preventProtrusion=false
-untileByDragging=false
+blurEnabled[$d]
+poloniumEnabled=false
 
 [Script-polonium]
 Borders=3
@@ -58,16 +31,9 @@ tiles={"layoutDirection":"horizontal","tiles":[]}
 [Tiling][c8a4a66d-bbca-5e7f-8a37-ce3b4a705568]
 tiles={"layoutDirection":"horizontal","tiles":[]}
 
-[Windows]
-ElectricBorderMaximize=false
-ElectricBorderTiling=false
-
 [Xwayland]
 Scale=1.75
 
 [org.kde.kdecoration2]
-ButtonsOnLeft=
-ButtonsOnRight=
-ShowToolTips=false
-library=org.kde.bismuth.decoration
-theme=Bismuth
+library=org.kde.breeze
+theme=Breeze

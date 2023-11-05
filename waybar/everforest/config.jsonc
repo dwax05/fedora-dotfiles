@@ -13,8 +13,12 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["group/system", "group/keyboard", "group/hardware", "custom/wlogout"],
-
+    "modules-right": [
+        "group/system", 
+        // "group/keyboard", 
+        "group/hardware", 
+        "custom/wlogout"
+    ],
     "group/system": {
         "orientation": "horizontal",
         "modules": [
@@ -111,7 +115,7 @@
     "keyboard-state": {
         "capslock": true,
         "format": {
-            "capslock": "<span foreground=\"#3D484D\">|</span> <span foreground=\"#A7C080\">󰪛</span> {icon}"
+            "capslock": "{icon}"
         },
         "format-icons": {
             "locked": "",

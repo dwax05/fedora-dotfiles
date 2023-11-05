@@ -1,0 +1,11 @@
+font="JetBrainsMono"
+font-size=14
+border-width=2
+outline-width=0
+outline-color=#f4d9e1
+border-color=#f4d9e1
+drun-launch=true
+selection-color=#E2809E
+corner-radius=16
+height=30%
+width=45%

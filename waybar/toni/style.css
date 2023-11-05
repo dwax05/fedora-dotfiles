@@ -176,10 +176,6 @@ div * {
     transition: all 0.25s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
-#workspaces button.persistent {
-    color: @tokio_night_black;
-}
-
 #cpu {
     border: solid 3px;
     border-right: 0px;
