@@ -1,2 +1,17 @@
-[2023-11-05 13:55:21.712][verbose] Chromium sandbox is enabled
-[2023-11-05 13:55:21.712][info] Running version 2023.5
+[2023-11-06 17:52:11.049][verbose] Chromium sandbox is enabled
+[2023-11-06 17:52:11.050][info] Running version 2023.5
+[2023-11-06 17:52:11.140][info] Detected locale: en-US
+[2023-11-06 17:52:11.160][info] Connected to the daemon
+[2023-11-06 17:52:11.206][info] Autoconnect the tunnel
+[2023-11-06 18:09:04.131][info] Suspend event received, disconnecting from daemon
+[2023-11-06 18:09:04.134][verbose] GRPC Channel connectivity state changed to 4
+[2023-11-06 18:09:04.137][info] Disconnected from the daemon
+[2023-11-06 18:09:04.138][info] Suspend event received, disconnecting from daemon
+[2023-11-06 18:09:04.139][info] Disconnected from the daemon
+[2023-11-06 21:44:03.815][info] Resume event received, connecting to daemon
+[2023-11-06 21:44:03.816][info] Resume event received, connecting to daemon
+[2023-11-06 21:44:03.817][info] Connected to the daemon
+[2023-11-06 21:44:03.817][info] Connected to the daemon
+[2023-11-06 21:44:03.842][warning] Failed to fetch account data. Retrying in 8000 ms
+[2023-11-06 21:44:03.843][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
+[2023-11-06 21:44:03.921][warning] Failed to fetch account data. Retrying in 8000 ms

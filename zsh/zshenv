@@ -1,13 +1,13 @@
 #!/bin/sh
 
-NOTMUCH_CONFIG="$HOME/.config/notmuch/config"
-HSTSIZE=100000
+HISTSIZE=100000
 SAVEHIST=100000
 HIST_STAMPS="dd/mm/yyyy"
 HISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/zsh/history"
 LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/less/history"
 
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+export FZF_DEFAULT_OPTS="--history-size=20000"
 
 shadafile="$HOME/.config/vim/viminfo"
 

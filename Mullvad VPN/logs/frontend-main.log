@@ -1,2 +1,6 @@
-[2023-11-05 13:56:47.517][verbose] Chromium sandbox is enabled
-[2023-11-05 13:56:47.518][info] Running version 2023.5
+[2023-11-06 22:04:47.126][verbose] Chromium sandbox is enabled
+[2023-11-06 22:04:47.127][info] Running version 2023.5
+[2023-11-06 22:04:47.456][info] Detected locale: en-US
+[2023-11-06 22:04:47.477][info] Connected to the daemon
+[2023-11-06 22:04:47.523][info] Autoconnect the tunnel
+[2023-11-06 22:04:47.748][warning] Failed to fetch account data. Retrying in 8000 ms

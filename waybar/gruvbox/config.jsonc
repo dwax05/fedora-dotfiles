@@ -47,14 +47,11 @@
     "pulseaudio": {
         "scroll-step": 1,
         "format": "{volume}% {icon}",
-        "format-muted": "<span foreground='#f2594b'></span> {format_source}",
         "format-icons": {
-            "default": [" ", " ", " "]
+            "default": [" ", " ", " "],
         },
         "tooltip": false,
-        "on-click": "pavucontrol --class=pavu",
-	"on-click-right": "easyeffects",
-	"ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
+        "on-click": "pavucontrol",
     },
 
     "network": {

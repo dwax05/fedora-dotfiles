@@ -89,7 +89,7 @@
     "custom/wallpaper":{
         "format":" ",
         "on-click": "bash ~/.config/system_scripts/pkill_bc",
-        "on-click-right": "echo nsfw > $HOME/.cache/wallpaperdir",
+        "on-click-right": "echo one-piece > $HOME/.cache/wallpaperdir",
         "tooltip": false,
     },
     "battery": {

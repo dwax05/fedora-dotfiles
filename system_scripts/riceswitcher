@@ -37,7 +37,6 @@ case $rice in
         ;;
     oglo)
         lvimtheme="bamboo"
-        wallpaperdir="one-piece"
         ;;
     1amSimple)
         lvimtheme="lunar" 
@@ -51,7 +50,6 @@ case $rice in
         ;;
     Sakura)
         lvimtheme="catppuccin-mocha"
-        wallpaperdir="one-piece"
         ;;
     everforest)
         lvimtheme="everforest"

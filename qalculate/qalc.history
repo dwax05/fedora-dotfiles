@@ -77,3 +77,7 @@ base 10
 2x=2
 d/dx 2x^(4lnx^3)+2x^3-x^2
 d/dx x^2+y^2=25
+d/dx 5x^3+3
+d/dx 5x^(ln5x)
+d/dx 5x^3
+x=12
