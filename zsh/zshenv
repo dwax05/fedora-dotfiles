@@ -1,10 +1,10 @@
 #!/bin/sh
 
-HISTSIZE=100000
-SAVEHIST=100000
-HIST_STAMPS="dd/mm/yyyy"
-HISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/zsh/history"
-LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/less/history"
+export HISTSIZE=100000
+export SAVEHIST=100000
+export HIST_STAMPS="dd/mm/yyyy"
+export HISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/zsh/history"
+export LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/less/history"
 
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export FZF_DEFAULT_OPTS="--history-size=20000"
@@ -20,6 +20,7 @@ BUN_INSTALL="$HOME/.local/share/bun"
 [ -d "$HOME/.cargo/bin" ] && export PATH="$PATH:$HOME/.cargo/bin"
 [ -d "$HOME/go/bin" ] && export PATH="$PATH:$HOME/go/bin"
 [ -d "$HOME/.config/emacs/bin" ] && export PATH="$PATH:$HOME/.config/emacs/bin"
+[ -d "/opt/gradle/gradle-8.4/bin" ] && export PATH="$PATH:/opt/gradle/gradle-8.4/bin"
 
 # bun completions
 [ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
