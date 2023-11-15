@@ -1,0 +1,21 @@
+ls
+help
+ls | sort-by mod
+ls | sort-by modified
+ls | sort-by size
+ls
+register ./nu_plugin_query
+cd
+cd .config/nushell/
+v .
+lvim .
+cd
+cd .config/lvim/lua/user/
+v plugins.lua
+lvim plugins.lua
+cd
+cd .config/nushell/
+ls
+v .
+lvim .
+cd ..

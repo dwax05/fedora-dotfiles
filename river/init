@@ -8,6 +8,8 @@
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
 # documentation.
 
+wlr-randr --output eDP-1 --scale 1.75 
+
 # Use the "logo" key as the primary modifier
 mod="Mod4"
 riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND _DISPLAY XDG_CURRENT_DESKTOP=river"
@@ -35,7 +37,7 @@ riverctl map normal $mod B spawn "firefox"
 riverctl map normal $mod+Shift x  spawn "bash ~/.config/system_scripts/wayland_session_lock"
 
 # exit river
-riverctl map normal $mod Escape spawn "bash ~/.config/wofi/river/leave.sh"
+riverctl map normal $mod Escape spawn "killall river"
 
 # Screenshot
 riverctl map normal $mod+Shift S spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g" | sed "s/--/-/g").png&&grim -g "$(slurp)" $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u normal -t 2000'

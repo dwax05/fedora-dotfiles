@@ -7,6 +7,9 @@ Name_1=www
 Number=1
 Rows=1
 
+[Effect-windowview]
+BorderActivateAll=9
+
 [NightColor]
 Active=true
 DayTemperature=4500
@@ -33,7 +36,3 @@ tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Xwayland]
 Scale=1.75
-
-[org.kde.kdecoration2]
-library=org.kde.breeze
-theme=Breeze

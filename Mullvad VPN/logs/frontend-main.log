@@ -1,7 +1,5 @@
-[2023-11-08 15:18:01.483][verbose] Chromium sandbox is enabled
-[2023-11-08 15:18:01.484][info] Running version 2023.5
-[2023-11-08 15:18:01.567][info] Detected locale: en-US
-[2023-11-08 15:18:01.589][info] Connected to the daemon
-[2023-11-08 15:18:01.632][info] Autoconnect the tunnel
-[2023-11-08 15:18:01.734][warning] Failed to fetch account data. Retrying in 8000 ms
-[2023-11-08 16:18:01.591][verbose] GRPC Channel connectivity state changed to 2
+[2023-11-15 18:31:40.037][verbose] Chromium sandbox is enabled
+[2023-11-15 18:31:40.038][info] Running version 2023.5
+[2023-11-15 18:31:40.101][info] Detected locale: en-US
+[2023-11-15 18:31:40.119][info] Connected to the daemon
+[2023-11-15 18:31:40.161][info] Autoconnect the tunnel

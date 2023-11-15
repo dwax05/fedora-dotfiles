@@ -133,7 +133,14 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [General]
-ColorSchemeHash=2ef8a9f7238e072ca91b0eb590f49ded650c76bd
+ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
+
+[Icons]
+Theme=Tela-circle-dracula
+
+[KDE]
+LookAndFeelPackage=org.kde.breezedark.desktop
+widgetStyle=Adwaita-Dark
 
 [WM]
 activeBackground=227,229,231

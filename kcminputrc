@@ -11,7 +11,7 @@ NaturalScroll=false
 
 [Mouse]
 X11LibInputXAccelProfileFlat=true
-cursorTheme=Bibata-Modern-Ice
+cursorTheme=Tela-circle-dracula
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

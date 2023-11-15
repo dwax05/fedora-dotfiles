@@ -29,7 +29,7 @@
         "format": "  {:%I:%M}",
         "tooltip": "true",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d/%m}"
+        "format-alt": "  {:%d/%m}"
     },
     "hyprland/workspaces": {
         "sort-by-number": true,
@@ -155,7 +155,7 @@
     "custom/launcher": {
         "format": "󰈸",
         "tooltip": false,
-        "on-click": "wofi --show run",
+        "on-click": "rofi -show drun",
     },
     "custom/wf-recorder": {
         "format": "{}",
