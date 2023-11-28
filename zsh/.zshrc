@@ -10,6 +10,7 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots) # lets you tab complete hidden files by default
+unsetopt BEEP
 
 export ZDOTDIR="$HOME/.config/zsh"
 . "$ZDOTDIR/zshenv"

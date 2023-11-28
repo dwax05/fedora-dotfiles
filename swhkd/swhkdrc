@@ -1,0 +1,95 @@
+# Launch applications
+super + shift + R
+    $HOME/.config/system_scripts/riceswitcher
+
+super + A
+    killall waybar; nwg-drawer; $HOME/.config/system_scripts/toggle_waybar
+
+super + shift + B
+    $HOME/.config/system_scripts/toggle_waybar
+
+# Brightness and Volume controls
+super + XF86MonBrightnessDown
+    brightnessctl --device='kbd_backlight' set 1%-
+
+super + XF86MonBrightnessUp
+    brightnessctl --device='kbd_backlight' set 1%+
+
+super + XF86MonBrightnessDown
+    brightnessctl set 1%-
+
+super + XF86MonBrightnessUp
+    brightnessctl set 1%+
+
+super + XF86AudioRaiseVolume
+    pamixer -i 1 && notify-send -r 1 "Volume" "($(pamixer --get-volume)%)"
+
+super + XF86AudioLowerVolume
+    pamixer -d 1 && notify-send -r 1 "Volume" "($(pamixer --get-volume)%)"
+
+super + XF86AudioMute
+    pamixer -t
+
+super + XF86Search
+    killall rofi || rofi -show drun
+
+# Multimedia Keys
+XF86AudioPlay
+    playerctl play-pause || echo cycle pause | socat - "$HOME/.config/mpv/socket"
+
+XF86AudioNext
+    playerctl next || echo playlist-next | socat - "$HOME/.config/mpv/socket"
+
+XF86AudioPrev
+    playerctl previous || echo playlist-prev | socat - "$HOME/.config/mpv/socket"
+
+# Screenshots
+super + shift + S
+    hyprctl keyword animation "fadeOut,0,0,default"; grim -g "$(slurp)" | wl-copy; hyprctl keyword animation "fadeOut,1,4,default"
+
+alt + shift + S
+    grimblast copysave active
+
+# Application Launchers
+super + X
+    hyprpicker -a -n
+
+super + E
+    $HOME/.local/bin/rofi-emoji
+
+super + F
+    pcmanfm
+
+super + Return
+    kitty
+
+super + shift + Return
+    $HOME/.config/system_scripts/tmuxkitty
+
+super + B
+    firefox
+
+super + V
+    qutebrowser
+
+super + N
+    swaync-client -t
+
+super + ESCAPE
+    wlogout
+
+super + D
+    killall rofi-drun || rofi-drun
+
+super + I
+    vimiv
+
+super + shift + C
+    $HOME/.local/bin/calc
+
+alt + shift + L
+    gtklock
+
+super + C
+    hyprctl reload
+

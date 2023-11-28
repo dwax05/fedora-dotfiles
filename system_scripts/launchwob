@@ -1,0 +1,7 @@
+#!/bin/sh
+
+while true; do
+    tail -f /tmp/wobvolume | wob &
+    inotifywait -e modify $HOME/.config/wob/wob.ini
+    killall wob
+done

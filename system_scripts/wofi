@@ -1,8 +1,0 @@
-#!/bin/sh
-
-rice=$(cat $HOME/.cache/rice)
-
-wofi_dir="river"
-[[ -d $HOME/.config/wofi/themes/$rice ]] && wofi_dir=$rice
-
-killall wofi || wofi --show drun -c $HOME/.config/wofi/$wofi_dir/config -s $HOME/.config/wofi/$wofi_dir/style.css

@@ -18,7 +18,7 @@
         "custom/wallpaper", 
         "pulseaudio", 
         "battery", 
-        "backlight",
+        // "backlight",
         "cpu", 
         "memory", 
         // "disk",

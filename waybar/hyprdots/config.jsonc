@@ -53,9 +53,10 @@
     },
 
     "clock": {
-        "format": "{: %I:%M %p 󰃭 %a %d}",
-        "format-alt": "{:󰥔 %H:%M  %b %Y}",
-        "tooltip-format": "<tt><big>{calendar}</big></tt>"
+        // "format": "{: %I:%M %p 󰃭 %a %d}",
+        "format": "  {:%I:%M %p}",
+        // "format-alt": "{:󰥔 %H:%M  %b %Y}",
+        // "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 
     "hyprland/workspaces": {

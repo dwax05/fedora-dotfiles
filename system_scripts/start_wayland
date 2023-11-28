@@ -1,7 +1,8 @@
 #!/bin/sh
 
-# auto starting apps
-killall -q powerdevil plasma-workspace swaync swayidle swww dunst swww-daemon waybar swaync nm-applet swayidle blueman-applet xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland xdg-desktop-portal-kde
+killall -q swhks swhkd powerdevil plasma-workspace swaync swayidle swww dunst \
+    swww-daemon waybar swaync nm-applet swayidle blueman-applet xdg-desktop-portal \
+    xdg-desktop-portal-wlr xdg-desktop-portal-hyprland xdg-desktop-portal-kde
 
 /usr/libexec/xdg-desktop-portal-hyprland &
 sleep 0.5
@@ -13,4 +14,6 @@ sh $HOME/.config/system_scripts/toggle_waybar &
 sh $HOME/.config/system_scripts/background-changer &
 nm-applet --indicator &
 blueman-applet &
-
+swayidle -w timeout 300 'pgrep gtklock || gtklock' &
+# swhks &
+# pkexec swhkd
