@@ -1,5 +1,6 @@
-[2023-11-27 20:33:28.154][verbose] Chromium sandbox is enabled
-[2023-11-27 20:33:28.154][info] Running version 2023.5
-[2023-11-27 20:33:28.218][info] Detected locale: en-US
-[2023-11-27 20:33:28.238][info] Connected to the daemon
-[2023-11-27 20:33:28.279][info] Autoconnect the tunnel
+[2023-12-08 14:40:13.104][verbose] Chromium sandbox is enabled
+[2023-12-08 14:40:13.104][info] Running version 2023.6
+[2023-12-08 14:40:13.169][info] Detected locale: en-US
+[2023-12-08 14:40:13.203][info] Connected to the daemon
+[2023-12-08 14:40:13.251][info] Skip autoconnect because GUI setting is disabled
+[2023-12-08 14:40:13.538][error] Failed to check autostart file: ENOENT: no such file or directory, access '/home/dylanwax/.config/autostart/mullvad-vpn.desktop'

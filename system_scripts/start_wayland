@@ -9,7 +9,7 @@ sleep 0.5
 /usr/lib/xdg-desktop-portal &
 
 $HOME/.local/bin/swww-daemon &
-swaync &
+# swaync &
 sh $HOME/.config/system_scripts/toggle_waybar &
 sh $HOME/.config/system_scripts/background-changer &
 nm-applet --indicator &

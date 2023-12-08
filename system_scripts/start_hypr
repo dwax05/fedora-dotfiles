@@ -3,17 +3,18 @@
 # auto starting apps
 killall -q wob launchwob powerdevil plasma-workspace swaync swayidle swww dunst swww-daemon waybar swaync nm-applet swayidle blueman-applet xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland xdg-desktop-portal-kde
 
-
 /usr/libexec/xdg-desktop-portal-hyprland &
 sleep 0.5
 /usr/lib/xdg-desktop-portal &
 
 $HOME/.local/bin/swww-daemon &
-swaync &
+# swaync &
+dunst &
 sh $HOME/.config/system_scripts/toggle_waybar &
 sh $HOME/.config/system_scripts/background-changer &
 nm-applet --indicator &
 blueman-applet &
+/opt/Mullvad\ VPN/mullvad-vpn --disable-gpu &
 swayidle -w timeout 600 'pgrep gtklock || gtklock' &
 
-exec ./launchwob &
+# exec ./launchwob &

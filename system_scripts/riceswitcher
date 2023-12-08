@@ -55,6 +55,9 @@ case $rice in
         lvimtheme="everforest"
         wofidir="oglo"
         ;;
+    knightfall)
+        wallpaperdir="walls"
+        ;;
     XNM1)
         wofidir="oglo"
         ;;

@@ -7,16 +7,20 @@
     "gtk-layer-shell": true,
     "passthrough": false,
     "fixed-center": true,
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": [],
+    "modules-left": [
+        "hyprland/workspaces", 
+        "hyprland/window"
+    ],
+    "modules-center": [
+    ],
     "modules-right": [
-        "cpu",
-        "memory",
+        // "cpu",
+        // "memory",
+        "tray",
+        // "pulseaudio",
         "battery",
         "clock#date",
         "clock",
-        "tray",
-        "custom/power"
     ],
     "custom/spotify": {
         "format": "{}",
@@ -33,10 +37,9 @@
             "warning": 25,
             "critical": 10
         },
-        "format":"{icon}  {capacity}%",
+        "format":"{icon} {capacity}%",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " "],
@@ -58,22 +61,23 @@
     },
     "clock": {
         "tooltip": false,
-        "format": "  {:%I:%M}"
+        "format": " {:%I:%M}",
     },
     "clock#date": {
-        "format": "   {:%a %d %b}",
+        "format": " {:%D}",
+        "format-alt": " {:%a %d %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
-        "format": "  {usage}%",
+        "format": " {usage}%",
         "tooltip": true,
         "interval": 1
     },
     "memory": {
-        "format": "  {used:0.2f}G"
+        "format": " {used:0.2f}G"
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}{volume}%",
         "format-muted": "  muted",
         "format-icons": {
             "headphone": " ",
@@ -87,7 +91,7 @@
         "on-click": "pavucontrol"
     },
     "custom/logo": {
-        "format": "",
+        "format": " ",
         "tooltip": false
     },
     "custom/sep": {
