@@ -14,6 +14,10 @@ window#waybar {
     color: #f4d9e1
 }
 
+/* window#waybar.hidded { */
+/*     opacity: 0.1; */
+/* } */
+
 #workspaces {
     background: #282828;
     margin: 5px 5px 5px 5px;

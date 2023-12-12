@@ -14,7 +14,7 @@ sh $HOME/.config/system_scripts/toggle_waybar &
 sh $HOME/.config/system_scripts/background-changer &
 nm-applet --indicator &
 blueman-applet &
-/opt/Mullvad\ VPN/mullvad-vpn --disable-gpu &
+# /opt/Mullvad\ VPN/mullvad-vpn --disable-gpu &
 swayidle -w timeout 600 'pgrep gtklock || gtklock' &
 
 # exec ./launchwob &

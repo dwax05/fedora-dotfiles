@@ -1,4 +1,4 @@
 [input]
 
-method = pipewire
+method = pulse
 source = auto

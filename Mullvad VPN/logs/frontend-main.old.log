@@ -1,32 +1,11 @@
-[2023-12-08 12:16:53.480][verbose] Chromium sandbox is enabled
-[2023-12-08 12:16:53.480][info] Running version 2023.6
-[2023-12-08 12:16:53.542][info] Detected locale: en-US
-[2023-12-08 12:16:53.571][info] Connected to the daemon
-[2023-12-08 12:16:53.615][info] Skip autoconnect because GUI setting is disabled
-[2023-12-08 12:16:53.793][error] Failed to check autostart file: ENOENT: no such file or directory, access '/home/dylanwax/.config/autostart/mullvad-vpn.desktop'
-[2023-12-08 12:27:21.309][info] Suspend event received, disconnecting from daemon
-[2023-12-08 12:27:21.311][verbose] GRPC Channel connectivity state changed to 4
-[2023-12-08 12:27:21.316][info] Disconnected from the daemon
-[2023-12-08 12:27:21.326][info] Suspend event received, disconnecting from daemon
-[2023-12-08 12:27:21.326][info] Disconnected from the daemon
-[2023-12-08 13:05:53.026][info] Resume event received, connecting to daemon
-[2023-12-08 13:05:53.028][info] Resume event received, connecting to daemon
-[2023-12-08 13:05:53.029][info] Connected to the daemon
-[2023-12-08 13:05:53.030][info] Connected to the daemon
-[2023-12-08 13:05:53.085][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
-[2023-12-08 13:05:53.086][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
-[2023-12-08 13:05:53.086][warning] Failed to fetch account data. Retrying in 8000 ms
-[2023-12-08 13:06:49.547][info] Suspend event received, disconnecting from daemon
-[2023-12-08 13:06:49.548][verbose] GRPC Channel connectivity state changed to 4
-[2023-12-08 13:06:49.557][verbose] GRPC Channel connectivity state changed to 1
-[2023-12-08 13:06:49.560][info] Disconnected from the daemon
-[2023-12-08 13:06:49.548][verbose] GRPC Channel connectivity state changed to 1
-[2023-12-08 13:06:49.579][info] Suspend event received, disconnecting from daemon
-[2023-12-08 13:06:49.580][info] Disconnected from the daemon
-[2023-12-08 14:39:52.958][info] Resume event received, connecting to daemon
-[2023-12-08 14:39:52.958][info] Resume event received, connecting to daemon
-[2023-12-08 14:39:52.976][info] Connected to the daemon
-[2023-12-08 14:39:52.976][info] Connected to the daemon
-[2023-12-08 14:39:52.995][warning] Failed to fetch account data. Retrying in 8000 ms
-[2023-12-08 14:39:52.996][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
-[2023-12-08 14:40:07.513][info] before-quit received
+[2023-12-11 10:53:23.020][verbose] Chromium sandbox is enabled
+[2023-12-11 10:53:23.020][info] Running version 2023.6
+[2023-12-11 10:53:23.083][info] Detected locale: en-US
+[2023-12-11 10:53:23.132][info] Connected to the daemon
+[2023-12-11 10:53:23.170][info] Skip autoconnect because GUI setting is disabled
+[2023-12-11 10:53:23.698][error] Failed to load index file: ERR_FAILED (-2) loading 'file:///opt/Mullvad VPN/resources/app.asar/build/src/renderer/index.html'
+[2023-12-11 10:53:23.700][error] Render process exited with exit code 133 due to crashed
+[2023-12-11 10:53:23.700][info] before-quit received
+[2023-12-11 10:53:23.700][info] Quit initiated
+[2023-12-11 10:53:23.701][info] Unsubscribed from the daemon events
+[2023-12-11 10:53:23.702][verbose] GRPC Channel connectivity state changed to 4

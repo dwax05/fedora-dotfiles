@@ -5,3 +5,4 @@ rice=$(cat $HOME/.cache/rice)
 if [ -d $HOME/.config/waybar/$rice ]; then
     killall waybar || waybar -c $HOME/.config/waybar/${rice}/config.jsonc -s $HOME/.config/waybar/${rice}/style.css & 
 fi
+# killall -SIGUSR1 waybar

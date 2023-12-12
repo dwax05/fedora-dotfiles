@@ -4,7 +4,7 @@
 [ -x "$(command -v lvim)" ] && alias vim="lvim" vimdiff="lvim -d" && EDITOR='lvim'
 
 # sudo not required for some system commands
-for command in yum mount umount sv dnf updatedb su shutdown poweroff reboot ; do
+for command in yum mount umount sv dnf snap updatedb su shutdown poweroff reboot ; do
 	alias $command="sudo $command"
 done; unset command
 
